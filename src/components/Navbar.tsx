@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,26 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToSection = (sectionId: string, e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
+    
+    // Close mobile menu if open
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+    
+    // If on homepage, scroll to the section
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // If not on homepage, navigate to homepage and then scroll after a delay
+      window.location.href = `/#${sectionId}`;
+    }
+  };
 
   return (
     <header
@@ -45,30 +66,27 @@ export function Navbar() {
           >
             Home
           </Link>
-          <Link
-            to="/points-table"
+          <a
+            href="#points-table"
+            onClick={(e) => scrollToSection("points-table", e)}
             className="font-medium hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-primary"
           >
             Points Table
-          </Link>
-          <Link
-            to="/players"
+          </a>
+          <a
+            href="#top-performers"
+            onClick={(e) => scrollToSection("top-performers", e)}
             className="font-medium hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-primary"
           >
-            Players
-          </Link>
-          <Link
-            to="/teams"
-            className="font-medium hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-primary"
-          >
-            Teams
-          </Link>
-          <Link
-            to="/compare"
+            Top Players
+          </a>
+          <a
+            href="#player-comparison"
+            onClick={(e) => scrollToSection("player-comparison", e)}
             className="font-medium hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-primary"
           >
             Compare
-          </Link>
+          </a>
           <ThemeToggle />
         </nav>
 
@@ -102,34 +120,27 @@ export function Navbar() {
             >
               Home
             </Link>
-            <Link
-              to="/points-table"
+            <a
+              href="#points-table"
+              onClick={(e) => scrollToSection("points-table", e)}
               className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               Points Table
-            </Link>
-            <Link
-              to="/players"
+            </a>
+            <a
+              href="#top-performers"
+              onClick={(e) => scrollToSection("top-performers", e)}
               className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
             >
-              Players
-            </Link>
-            <Link
-              to="/teams"
+              Top Players
+            </a>
+            <a
+              href="#player-comparison"
+              onClick={(e) => scrollToSection("player-comparison", e)}
               className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Teams
-            </Link>
-            <Link
-              to="/compare"
-              className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               Compare
-            </Link>
+            </a>
           </nav>
         </div>
       )}

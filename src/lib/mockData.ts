@@ -1,4 +1,3 @@
-
 // Team Data
 export interface Team {
   id: string;
@@ -346,6 +345,7 @@ export const matches: Match[] = [
     team2Id: "srh",
     date: "2024-05-18T19:30:00+05:30",
     venue: "Sawai Mansingh Stadium, Jaipur",
+    result: "Upcoming match",
     status: "Upcoming"
   }
 ];
