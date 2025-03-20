@@ -1,6 +1,7 @@
 
 import { ReactNode } from "react";
 import { Navbar } from "@/components/Navbar";
+import { Link } from "react-router-dom";
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,24 +21,30 @@ export function Layout({ children }: LayoutProps) {
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <a
-                href="#"
+              <Link
+                to="/about"
+                className="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+              >
+                About
+              </Link>
+              <Link
+                to="/terms"
                 className="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
               >
                 Terms
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/privacy"
                 className="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
               >
                 Privacy
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/contact"
                 className="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>

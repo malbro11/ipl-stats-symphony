@@ -4,16 +4,8 @@ import { PointsTable } from "@/components/PointsTable";
 import { TopPerformers } from "@/components/TopPerformers";
 import { PlayerComparison } from "@/components/PlayerComparison";
 import { useLocation } from "react-router-dom";
-
-const AdSpot = ({ size, position }: { size: string; position: string }) => (
-  <div className="my-6 w-full">
-    <div className="bg-gray-200 dark:bg-gray-800 border border-dashed border-gray-400 dark:border-gray-600 rounded-lg p-4 text-center">
-      <p className="text-gray-800 dark:text-gray-200 text-sm font-medium">
-        AD SPACE: {size} - {position}
-      </p>
-    </div>
-  </div>
-);
+import { AdSpot } from "@/components/AdSpot";
+import { ViewerCounter } from "@/components/ViewerCounter";
 
 const Index = () => {
   const location = useLocation();
@@ -22,6 +14,15 @@ const Index = () => {
   return (
     <Layout>
       <div id="content">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
+            <h2 className="text-2xl font-bold">IPL 2023 Season</h2>
+            <ViewerCounter />
+          </div>
+          
+          <AdSpot size="970x90" position="Above Points Table" />
+        </div>
+        
         <div id="points-table">
           <PointsTable />
           {!isPointsTableRoute && <AdSpot size="728x90" position="Below Points Table" />}
