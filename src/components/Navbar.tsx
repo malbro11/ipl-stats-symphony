@@ -4,10 +4,15 @@ import { Link, useLocation } from "react-router-dom";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerTrigger,
+  DrawerClose
+} from "@/components/ui/drawer";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -21,11 +26,6 @@ export function Navbar() {
 
   const scrollToSection = (sectionId: string, e?: React.MouseEvent) => {
     if (e) e.preventDefault();
-    
-    // Close mobile menu if open
-    if (isMobileMenuOpen) {
-      setIsMobileMenuOpen(false);
-    }
     
     // If on homepage, scroll to the section
     if (location.pathname === "/") {
@@ -55,7 +55,6 @@ export function Navbar() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-ipl-blue to-ipl-red">
             IPL Stats
           </span>
-          <span className="text-sm font-light opacity-70 mt-1">Symphony</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -90,60 +89,76 @@ export function Navbar() {
           <ThemeToggle />
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button with Drawer */}
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="w-9 h-9 rounded-full"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
-            )}
-          </Button>
+          <Drawer>
+            <DrawerTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="w-9 h-9 rounded-full"
+                aria-label="Toggle menu"
+              >
+                <Menu className="h-5 w-5" />
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent className="p-0">
+              <div className="p-4 border-b">
+                <div className="flex items-center justify-between">
+                  <span className="text-lg font-semibold">Menu</span>
+                  <DrawerClose asChild>
+                    <Button variant="ghost" size="icon" className="rounded-full">
+                      <X className="h-5 w-5" />
+                    </Button>
+                  </DrawerClose>
+                </div>
+              </div>
+              <nav className="flex flex-col p-4">
+                <Link
+                  to="/"
+                  className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
+                >
+                  Home
+                </Link>
+                <a
+                  href="#points-table"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("points-table");
+                    document.querySelector('[data-state="closed"]')?.click();
+                  }}
+                  className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
+                >
+                  Points Table
+                </a>
+                <a
+                  href="#top-performers"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("top-performers");
+                    document.querySelector('[data-state="closed"]')?.click();
+                  }}
+                  className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
+                >
+                  Top Players
+                </a>
+                <a
+                  href="#player-comparison"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("player-comparison");
+                    document.querySelector('[data-state="closed"]')?.click();
+                  }}
+                  className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
+                >
+                  Compare
+                </a>
+              </nav>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-background md:hidden pt-16">
-          <nav className="container mx-auto px-4 py-8 flex flex-col items-center gap-6 text-lg">
-            <Link
-              to="/"
-              className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <a
-              href="#points-table"
-              onClick={(e) => scrollToSection("points-table", e)}
-              className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-            >
-              Points Table
-            </a>
-            <a
-              href="#top-performers"
-              onClick={(e) => scrollToSection("top-performers", e)}
-              className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-            >
-              Top Players
-            </a>
-            <a
-              href="#player-comparison"
-              onClick={(e) => scrollToSection("player-comparison", e)}
-              className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
-            >
-              Compare
-            </a>
-          </nav>
-        </div>
-      )}
     </header>
   );
 }

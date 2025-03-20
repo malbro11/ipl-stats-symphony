@@ -1,6 +1,6 @@
 
 import { useState, useMemo } from "react";
-import { teams, Team } from "@/lib/mockData";
+import { teams } from "@/lib/mockData";
 import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import { 
@@ -55,18 +55,8 @@ export function PointsTable() {
   };
 
   return (
-    <section id="points-table" className={isPointsTableRoute ? "pt-24 pb-20" : "py-20"}>
+    <section id="points-table" className={isPointsTableRoute ? "pt-24 pb-20" : "pt-24 pb-20"}>
       <div className="container mx-auto px-4">
-        {!isPointsTableRoute && (
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Points Table</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Current standings for IPL 2024. Teams are ranked by points, with Net
-              Run Rate as a tiebreaker.
-            </p>
-          </div>
-        )}
-
         <div className="overflow-x-auto">
           <Table className="w-full glass-card rounded-xl overflow-hidden">
             <TableHeader className="bg-gray-100/70 dark:bg-gray-800/70">
