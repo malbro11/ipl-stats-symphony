@@ -39,6 +39,17 @@ export function Navbar() {
     }
   };
 
+  const handleMobileMenuClick = (sectionId: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+
+    // Find the drawer close button and programmatically close it
+    const closeButton = document.querySelector('[data-state="open"] button[aria-label="Close"]');
+    if (closeButton && closeButton instanceof HTMLElement) {
+      closeButton.click();
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -123,33 +134,21 @@ export function Navbar() {
                 </Link>
                 <a
                   href="#points-table"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("points-table");
-                    document.querySelector('[data-state="closed"]')?.click();
-                  }}
+                  onClick={(e) => handleMobileMenuClick("points-table", e)}
                   className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
                 >
                   Points Table
                 </a>
                 <a
                   href="#top-performers"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("top-performers");
-                    document.querySelector('[data-state="closed"]')?.click();
-                  }}
+                  onClick={(e) => handleMobileMenuClick("top-performers", e)}
                   className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
                 >
                   Top Players
                 </a>
                 <a
                   href="#player-comparison"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("player-comparison");
-                    document.querySelector('[data-state="closed"]')?.click();
-                  }}
+                  onClick={(e) => handleMobileMenuClick("player-comparison", e)}
                   className="w-full py-3 text-center font-medium hover:text-primary transition-colors"
                 >
                   Compare
