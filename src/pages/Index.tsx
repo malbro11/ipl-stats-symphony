@@ -22,7 +22,9 @@ const Index = () => {
           </div>
           
           {/* Matches Carousel */}
-          <MatchesCarousel />
+          <section className="mb-6">
+            <MatchesCarousel />
+          </section>
           
           <AdSpot size="970x90" position="Above Points Table" />
         </div>

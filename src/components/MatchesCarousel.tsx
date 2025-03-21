@@ -1,16 +1,32 @@
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, Calendar } from "lucide-react";
 import { matches, teams } from "@/lib/mockData";
-import { format, parseISO } from "date-fns";
+import { format, parseISO, isAfter, isBefore } from "date-fns";
 
 export function MatchesCarousel() {
-  // Get only upcoming and live matches
+  // Get upcoming and live matches
   const [activeMatches] = useState(
     matches.filter(match => match.status === "Upcoming" || match.status === "Live")
   );
+
+  // Find the latest match (closest upcoming match to current date)
+  const latestMatch = useMemo(() => {
+    const now = new Date();
+    const upcomingMatches = activeMatches.filter(match => 
+      match.status === "Upcoming" && isAfter(parseISO(match.date), now)
+    );
+    
+    if (upcomingMatches.length === 0) return null;
+    
+    return upcomingMatches.reduce((closest, match) => {
+      const closestDate = parseISO(closest.date);
+      const matchDate = parseISO(match.date);
+      return isBefore(matchDate, closestDate) ? match : closest;
+    });
+  }, [activeMatches]);
 
   const getTeamData = (teamId: string) => {
     return teams.find(team => team.id === teamId);
@@ -18,6 +34,9 @@ export function MatchesCarousel() {
 
   return (
     <div className="py-4">
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-lg font-semibold">Upcoming Matches</h3>
+      </div>
       <Carousel
         opts={{
           align: "start",
@@ -29,13 +48,14 @@ export function MatchesCarousel() {
             const team1 = getTeamData(match.team1Id);
             const team2 = getTeamData(match.team2Id);
             const matchDate = parseISO(match.date);
+            const isLatest = latestMatch && match.id === latestMatch.id;
             
             if (!team1 || !team2) return null;
             
             return (
               <CarouselItem key={match.id} className="pl-1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <Card className="overflow-hidden border-2" style={{ 
-                  borderColor: match.status === "Live" ? "#ff4d4f" : "#e2e8f0" 
+                <Card className={`overflow-hidden border-2 ${isLatest ? 'ring-2 ring-blue-500 dark:ring-blue-400' : ''}`} style={{ 
+                  borderColor: match.status === "Live" ? "#ff4d4f" : isLatest ? "#3b82f6" : "#e2e8f0" 
                 }}>
                   <div className="relative">
                     {match.status === "Live" && (
@@ -48,22 +68,29 @@ export function MatchesCarousel() {
                         UPCOMING
                       </div>
                     )}
+                    {isLatest && match.status === "Upcoming" && (
+                      <div className="absolute top-2 left-2 bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                        NEXT MATCH
+                      </div>
+                    )}
                   </div>
                   <CardContent className="p-4">
                     <div className="flex justify-between items-center mb-3">
                       <div className="flex flex-col items-center justify-center w-2/5">
                         <div 
-                          className="w-12 h-12 flex items-center justify-center rounded-full p-1"
-                          style={{ backgroundColor: team1.primaryColor + "20" }}
+                          className="w-12 h-12 flex items-center justify-center rounded-full"
+                          style={{ backgroundColor: team1.primaryColor }}
                         >
-                          <img 
-                            src={team1.logo} 
-                            alt={team1.name} 
-                            className="w-8 h-8 object-contain" 
-                            onError={(e) => {
-                              (e.target as HTMLImageElement).src = "/placeholder.svg";
-                            }}
-                          />
+                          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                            <img 
+                              src={team1.logo} 
+                              alt={team1.name} 
+                              className="w-8 h-8 object-contain" 
+                              onError={(e) => {
+                                (e.target as HTMLImageElement).src = "/placeholder.svg";
+                              }}
+                            />
+                          </div>
                         </div>
                         <span className="text-sm font-semibold mt-1">{team1.shortName}</span>
                       </div>
@@ -72,17 +99,19 @@ export function MatchesCarousel() {
                       
                       <div className="flex flex-col items-center justify-center w-2/5">
                         <div 
-                          className="w-12 h-12 flex items-center justify-center rounded-full p-1"
-                          style={{ backgroundColor: team2.primaryColor + "20" }}
+                          className="w-12 h-12 flex items-center justify-center rounded-full"
+                          style={{ backgroundColor: team2.primaryColor }}
                         >
-                          <img 
-                            src={team2.logo} 
-                            alt={team2.name} 
-                            className="w-8 h-8 object-contain"
-                            onError={(e) => {
-                              (e.target as HTMLImageElement).src = "/placeholder.svg";
-                            }}
-                          />
+                          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                            <img 
+                              src={team2.logo} 
+                              alt={team2.name} 
+                              className="w-8 h-8 object-contain"
+                              onError={(e) => {
+                                (e.target as HTMLImageElement).src = "/placeholder.svg";
+                              }}
+                            />
+                          </div>
                         </div>
                         <span className="text-sm font-semibold mt-1">{team2.shortName}</span>
                       </div>

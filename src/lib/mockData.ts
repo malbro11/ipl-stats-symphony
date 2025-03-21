@@ -1,3 +1,4 @@
+
 // Team Data
 export interface Team {
   id: string;
@@ -345,6 +346,53 @@ export const matches: Match[] = [
     team2Id: "srh",
     date: "2024-05-18T19:30:00+05:30",
     venue: "Sawai Mansingh Stadium, Jaipur",
+    result: "Upcoming match",
+    status: "Upcoming"
+  },
+  // Add more upcoming matches
+  {
+    id: "match6",
+    team1Id: "csk",
+    team2Id: "kkr",
+    date: "2024-05-20T19:30:00+05:30",
+    venue: "M.A. Chidambaram Stadium, Chennai",
+    result: "Upcoming match",
+    status: "Upcoming"
+  },
+  {
+    id: "match7",
+    team1Id: "mi",
+    team2Id: "rcb",
+    date: "2024-05-22T15:30:00+05:30",
+    venue: "Wankhede Stadium, Mumbai",
+    result: "Upcoming match",
+    status: "Upcoming"
+  },
+  {
+    id: "match8",
+    team1Id: "dc",
+    team2Id: "pbks",
+    date: "2024-05-19T19:30:00+05:30",
+    venue: "Arun Jaitley Stadium, Delhi",
+    result: "Upcoming match",
+    status: "Upcoming"
+  },
+  {
+    id: "match9",
+    team1Id: "gt",
+    team2Id: "lsg",
+    date: "2024-05-17T15:30:00+05:30", // Today's match (set to be the latest)
+    venue: "Narendra Modi Stadium, Ahmedabad",
+    result: "Match in progress",
+    team1Score: "145/3 (15.2)",
+    status: "Live"
+  },
+  {
+    id: "match10",
+    team1Id: "srh",
+    team2Id: "kkr",
+    date: "2024-05-24T19:30:00+05:30",
+    venue: "Rajiv Gandhi International Stadium, Hyderabad",
     result: "Upcoming match",
     status: "Upcoming"
   }
