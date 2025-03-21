@@ -35,7 +35,7 @@ export function MatchesCarousel() {
   return (
     <div className="py-4">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold">Upcoming Matches</h3>
+        <h3 className="text-lg font-semibold">IPL 2025 Upcoming Matches</h3>
       </div>
       <Carousel
         opts={{
@@ -58,7 +58,7 @@ export function MatchesCarousel() {
                   borderColor: match.status === "Live" ? "#ff4d4f" : isLatest ? "#3b82f6" : "#e2e8f0" 
                 }}>
                   <div className="relative">
-                    {/* Status badges positioned at the top of the card, not over the logos */}
+                    {/* Status badges positioned at the top of the card */}
                     <div className="absolute top-2 left-2 flex gap-2">
                       {isLatest && match.status === "Upcoming" && (
                         <div className="bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
@@ -67,19 +67,23 @@ export function MatchesCarousel() {
                       )}
                     </div>
                     <div className="absolute top-2 right-2">
-                      {match.status === "Live" && (
-                        <div className="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-full animate-pulse">
-                          LIVE
-                        </div>
-                      )}
                       {match.status === "Upcoming" && (
-                        <div className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                        <div className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-full mb-2">
                           UPCOMING
                         </div>
                       )}
                     </div>
+                    
+                    {/* Live badge in the center */}
+                    {match.status === "Live" && (
+                      <div className="absolute top-0 left-0 right-0 flex justify-center">
+                        <div className="bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full translate-y-[-50%] shadow-md animate-pulse">
+                          LIVE
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  <CardContent className="p-4 pt-8"> {/* Added padding-top to avoid overlapping with badges */}
+                  <CardContent className="p-4 pt-10"> {/* Increased padding-top to avoid overlapping with badges */}
                     <div className="flex justify-between items-center mb-3">
                       <div className="flex flex-col items-center justify-center w-2/5">
                         <div
