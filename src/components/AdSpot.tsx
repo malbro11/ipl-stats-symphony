@@ -27,7 +27,10 @@ export function AdSpot({ size, position }: AdSpotProps) {
     <div className="my-6 w-full">
       <div className="bg-gray-200 dark:bg-gray-800 border border-dashed border-gray-400 dark:border-gray-600 rounded-lg p-4 text-center">
         <p className="text-gray-800 dark:text-gray-200 text-sm font-medium">
-          AD SPACE: {displaySize} - {position}
+          AD SPACE
+        </p>
+        <p className="text-gray-800 dark:bg-gray-600 dark:text-white bg-gray-600 text-white text-xs font-medium px-2 py-1 rounded inline-block mt-1">
+          {displaySize} - {position}
         </p>
       </div>
     </div>

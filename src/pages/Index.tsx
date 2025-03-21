@@ -6,6 +6,7 @@ import { PlayerComparison } from "@/components/PlayerComparison";
 import { useLocation } from "react-router-dom";
 import { AdSpot } from "@/components/AdSpot";
 import { ViewerCounter } from "@/components/ViewerCounter";
+import { MatchesCarousel } from "@/components/MatchesCarousel";
 
 const Index = () => {
   const location = useLocation();
@@ -19,6 +20,9 @@ const Index = () => {
             <h2 className="text-2xl font-bold">IPL 2023 Season</h2>
             <ViewerCounter />
           </div>
+          
+          {/* Matches Carousel */}
+          <MatchesCarousel />
           
           <AdSpot size="970x90" position="Above Points Table" />
         </div>
