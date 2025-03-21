@@ -58,23 +58,28 @@ export function MatchesCarousel() {
                   borderColor: match.status === "Live" ? "#ff4d4f" : isLatest ? "#3b82f6" : "#e2e8f0" 
                 }}>
                   <div className="relative">
-                    {match.status === "Live" && (
-                      <div className="absolute top-2 right-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-full animate-pulse">
-                        LIVE
-                      </div>
-                    )}
-                    {match.status === "Upcoming" && (
-                      <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
-                        UPCOMING
-                      </div>
-                    )}
-                    {isLatest && match.status === "Upcoming" && (
-                      <div className="absolute top-2 left-2 bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
-                        NEXT MATCH
-                      </div>
-                    )}
+                    {/* Status badges positioned at the top of the card, not over the logos */}
+                    <div className="absolute top-2 left-2 flex gap-2">
+                      {isLatest && match.status === "Upcoming" && (
+                        <div className="bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                          NEXT MATCH
+                        </div>
+                      )}
+                    </div>
+                    <div className="absolute top-2 right-2">
+                      {match.status === "Live" && (
+                        <div className="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-full animate-pulse">
+                          LIVE
+                        </div>
+                      )}
+                      {match.status === "Upcoming" && (
+                        <div className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                          UPCOMING
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <CardContent className="p-4">
+                  <CardContent className="p-4 pt-8"> {/* Added padding-top to avoid overlapping with badges */}
                     <div className="flex justify-between items-center mb-3">
                       <div className="flex flex-col items-center justify-center w-2/5">
                         <div
