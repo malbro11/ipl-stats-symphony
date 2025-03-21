@@ -48,26 +48,24 @@ const Contact = () => {
                 <Mail className="h-5 w-5 text-primary mt-1" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-600 dark:text-gray-300">contact@iplstats.symphony.com</p>
+                  <p className="text-gray-600 dark:text-gray-300">iplstats40@gmail.com</p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <Phone className="h-5 w-5 text-primary mt-1" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-gray-600 dark:text-gray-300">+91 98765 43210</p>
+                  <p className="text-gray-600 dark:text-gray-300">+91 </p>
                 </div>
-              </div>
+              </div> */}
               
               <div className="flex items-start gap-4">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
                 <div>
                   <h3 className="font-medium">Address</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Cricket Analytics Tower<br />
-                    M. Chinnaswamy Stadium Road<br />
-                    Bengaluru, Karnataka 560001<br />
+                    Bengaluru, Karnataka 560025<br />
                     India
                   </p>
                 </div>

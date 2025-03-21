@@ -8,13 +8,12 @@ export function TopPerformers() {
   const [activeTab, setActiveTab] = useState("batsmen");
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900/30">
+    <section className="py-5 bg-gray-50 dark:bg-gray-900/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Top Performers</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            The standout players leading the charts in IPL 2024. Batting,
-            bowling, and all-round excellence.
+            The standout players who dominated the charts in IPL 2024, showcasing their brilliance in batting, bowling, and all-round performances.
           </p>
         </div>
 
@@ -40,15 +39,14 @@ export function TopPerformers() {
                     className="glass-card rounded-xl overflow-hidden"
                   >
                     <div
-                      className={`h-1 ${
-                        index === 0
+                      className={`h-1 ${index === 0
                           ? "bg-yellow-400"
                           : index === 1
-                          ? "bg-gray-300"
-                          : index === 2
-                          ? "bg-amber-600"
-                          : "bg-blue-500"
-                      }`}
+                            ? "bg-gray-300"
+                            : index === 2
+                              ? "bg-amber-600"
+                              : "bg-blue-500"
+                        }`}
                     />
                     <div className="p-6">
                       <div className="flex items-start gap-4">
@@ -76,10 +74,10 @@ export function TopPerformers() {
                             </div>
                             <div className="flex justify-between">
                               <span className="text-sm text-gray-500 dark:text-gray-400">
-                                Strike Rate
+                                SR
                               </span>
                               <span className="font-semibold">
-                                {player.strikeRate?.toFixed(2)}
+                                {player.strikeRate?.toFixed(1)}
                               </span>
                             </div>
                             <div className="flex justify-between">
@@ -105,15 +103,14 @@ export function TopPerformers() {
                     className="glass-card rounded-xl overflow-hidden"
                   >
                     <div
-                      className={`h-1 ${
-                        index === 0
+                      className={`h-1 ${index === 0
                           ? "bg-yellow-400"
                           : index === 1
-                          ? "bg-gray-300"
-                          : index === 2
-                          ? "bg-amber-600"
-                          : "bg-blue-500"
-                      }`}
+                            ? "bg-gray-300"
+                            : index === 2
+                              ? "bg-amber-600"
+                              : "bg-blue-500"
+                        }`}
                     />
                     <div className="p-6">
                       <div className="flex items-start gap-4">
@@ -170,15 +167,14 @@ export function TopPerformers() {
                     className="glass-card rounded-xl overflow-hidden"
                   >
                     <div
-                      className={`h-1 ${
-                        index === 0
+                      className={`h-1 ${index === 0
                           ? "bg-yellow-400"
                           : index === 1
-                          ? "bg-gray-300"
-                          : index === 2
-                          ? "bg-amber-600"
-                          : "bg-blue-500"
-                      }`}
+                            ? "bg-gray-300"
+                            : index === 2
+                              ? "bg-amber-600"
+                              : "bg-blue-500"
+                        }`}
                     />
                     <div className="p-6">
                       <div className="flex items-start gap-4">

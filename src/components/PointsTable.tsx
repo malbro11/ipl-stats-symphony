@@ -55,7 +55,7 @@ export function PointsTable() {
   };
 
   return (
-    <section id="points-table" className={isPointsTableRoute ? "pt-24 pb-20" : "pt-24 pb-20"}>
+    <section id="points-table" className={isPointsTableRoute ? "pt-5 pb-5" : "pt-5 pb-5"}>
       <div className="container mx-auto px-4">
         <div className="overflow-x-auto">
           <Table className="w-full glass-card rounded-xl overflow-hidden">

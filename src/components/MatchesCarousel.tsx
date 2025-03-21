@@ -15,12 +15,12 @@ export function MatchesCarousel() {
   // Find the latest match (closest upcoming match to current date)
   const latestMatch = useMemo(() => {
     const now = new Date();
-    const upcomingMatches = activeMatches.filter(match => 
+    const upcomingMatches = activeMatches.filter(match =>
       match.status === "Upcoming" && isAfter(parseISO(match.date), now)
     );
-    
+
     if (upcomingMatches.length === 0) return null;
-    
+
     return upcomingMatches.reduce((closest, match) => {
       const closestDate = parseISO(closest.date);
       const matchDate = parseISO(match.date);
@@ -49,13 +49,13 @@ export function MatchesCarousel() {
             const team2 = getTeamData(match.team2Id);
             const matchDate = parseISO(match.date);
             const isLatest = latestMatch && match.id === latestMatch.id;
-            
+
             if (!team1 || !team2) return null;
-            
+
             return (
-              <CarouselItem key={match.id} className="pl-1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <Card className={`overflow-hidden border-2 ${isLatest ? 'ring-2 ring-blue-500 dark:ring-blue-400' : ''}`} style={{ 
-                  borderColor: match.status === "Live" ? "#ff4d4f" : isLatest ? "#3b82f6" : "#e2e8f0" 
+              <CarouselItem key={match.id} className="m-1 pl-1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <Card className={`overflow-hidden border-2 ${isLatest ? 'ring-2 ring-blue-500 dark:ring-blue-400' : ''}`} style={{
+                  borderColor: match.status === "Live" ? "#ff4d4f" : isLatest ? "#3b82f6" : "#e2e8f0"
                 }}>
                   <div className="relative">
                     {/* Status badges positioned at the top of the card */}
@@ -73,15 +73,14 @@ export function MatchesCarousel() {
                         </div>
                       )}
                     </div>
-                    
-                    {/* Live badge in the center */}
-                    {match.status === "Live" && (
-                      <div className="absolute top-0 left-0 right-0 flex justify-center">
-                        <div className="bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full translate-y-[-50%] shadow-md animate-pulse">
+
+                    <div className="absolute top-2 right-2">
+                      {match.status === "Live" && (
+                        <div className="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-full mb-2">
                           LIVE
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
                   <CardContent className="p-4 pt-10"> {/* Increased padding-top to avoid overlapping with badges */}
                     <div className="flex justify-between items-center mb-3">
@@ -95,9 +94,9 @@ export function MatchesCarousel() {
                         ></div>
                         <span className="text-sm font-semibold mt-1">{team1.shortName}</span>
                       </div>
-                      
+
                       <div className="text-lg font-bold">VS</div>
-                      
+
                       <div className="flex flex-col items-center justify-center w-2/5">
                         <div
                           className="w-8 h-8"
@@ -109,7 +108,7 @@ export function MatchesCarousel() {
                         <span className="text-sm font-semibold mt-1">{team2.shortName}</span>
                       </div>
                     </div>
-                    
+
                     <div className="mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
                       <div className="flex items-center text-xs text-gray-600 dark:text-gray-400 mb-1">
                         <Calendar className="h-3 w-3 mr-1" />
