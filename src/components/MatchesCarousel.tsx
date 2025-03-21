@@ -77,42 +77,26 @@ export function MatchesCarousel() {
                   <CardContent className="p-4">
                     <div className="flex justify-between items-center mb-3">
                       <div className="flex flex-col items-center justify-center w-2/5">
-                        <div 
-                          className="w-12 h-12 flex items-center justify-center rounded-full"
-                          style={{ backgroundColor: team1.primaryColor }}
-                        >
-                          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                            <img 
-                              src={team1.logo} 
-                              alt={team1.name} 
-                              className="w-8 h-8 object-contain" 
-                              onError={(e) => {
-                                (e.target as HTMLImageElement).src = "/placeholder.svg";
-                              }}
-                            />
-                          </div>
-                        </div>
+                        <div
+                          className="w-8 h-8"
+                          style={{
+                            backgroundColor: team1.primaryColor,
+                            borderRadius: "50%",
+                          }}
+                        ></div>
                         <span className="text-sm font-semibold mt-1">{team1.shortName}</span>
                       </div>
                       
                       <div className="text-lg font-bold">VS</div>
                       
                       <div className="flex flex-col items-center justify-center w-2/5">
-                        <div 
-                          className="w-12 h-12 flex items-center justify-center rounded-full"
-                          style={{ backgroundColor: team2.primaryColor }}
-                        >
-                          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                            <img 
-                              src={team2.logo} 
-                              alt={team2.name} 
-                              className="w-8 h-8 object-contain"
-                              onError={(e) => {
-                                (e.target as HTMLImageElement).src = "/placeholder.svg";
-                              }}
-                            />
-                          </div>
-                        </div>
+                        <div
+                          className="w-8 h-8"
+                          style={{
+                            backgroundColor: team2.primaryColor,
+                            borderRadius: "50%",
+                          }}
+                        ></div>
                         <span className="text-sm font-semibold mt-1">{team2.shortName}</span>
                       </div>
                     </div>
