@@ -44,11 +44,11 @@ export const teams: Team[] = [
     shortName: "RCB",
     logo: "/teams/rcb.png",
     primaryColor: "#D71920",
-    matches: 0,
-    won: 0,
+    matches: 1,
+    won: 1,
     lost: 0,
-    nrr: 0,
-    points: 0
+    nrr: +2.137,
+    points: 2
   },
   {
     id: "gt",
@@ -92,10 +92,10 @@ export const teams: Team[] = [
     shortName: "KKR",
     logo: "/teams/kkr.png",
     primaryColor: "#3A225D",
-    matches: 0,
+    matches: 1,
     won: 0,
-    lost: 0,
-    nrr: 0,
+    lost: 1,
+    nrr: -2.137,
     points: 0
   },
   {
