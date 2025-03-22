@@ -93,6 +93,10 @@ export function MatchesCarousel() {
                           }}
                         ></div>
                         <span className="text-sm font-semibold mt-1">{team1.shortName}</span>
+                        <div className="h-4">
+                          {match?.team1Score && <span className="text-sm font-semibold mt-1">{match.team1Score}</span>}
+                        </div>
+
                       </div>
 
                       <div className="text-lg font-bold">VS</div>
@@ -106,6 +110,9 @@ export function MatchesCarousel() {
                           }}
                         ></div>
                         <span className="text-sm font-semibold mt-1">{team2.shortName}</span>
+                        <div className="h-4">
+                          {match?.team2Score && <span className="text-sm font-semibold mt-1">{match.team2Score}</span>}
+                        </div>
                       </div>
                     </div>
 
