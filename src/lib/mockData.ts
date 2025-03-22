@@ -344,6 +344,8 @@ export interface Match {
   team1Score?: string;
   team2Score?: string;
   status: "Upcoming" | "Live" | "Completed";
+  finalStats?:string;
+  player_match?:string;
 }
 
 export const matches: Match[] = [
@@ -354,9 +356,11 @@ export const matches: Match[] = [
     "date": "2025-03-22T19:30:00+05:30",
     "venue": "Eden Gardens, Kolkata",
     "result": "Upcoming match",
-    "status": "Live",
+    "status": "Completed",
     team1Score: '174/8 (20)',
-    team2Score: 'Playing',
+    team2Score: '177/3 (16.2)',
+    finalStats: 'Royal Challengers Bengaluru won by 7 wkts',
+    player_match: 'Krunal Pandya'
   },
   {
     "id": "match2",

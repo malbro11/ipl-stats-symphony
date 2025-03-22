@@ -9,7 +9,7 @@ import { format, parseISO, isAfter, isBefore } from "date-fns";
 export function MatchesCarousel() {
   // Get upcoming and live matches
   const [activeMatches] = useState(
-    matches.filter(match => match.status === "Upcoming" || match.status === "Live")
+    matches.filter(match => match.status === "Upcoming" || match.status === "Live" || match.status === "Completed")
   );
 
   // Find the latest match (closest upcoming match to current date)
@@ -63,6 +63,11 @@ export function MatchesCarousel() {
                       {isLatest && match.status === "Upcoming" && (
                         <div className="bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
                           NEXT MATCH
+                        </div>
+                      )}
+                      {match.status === "Completed" && (
+                        <div className="bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                          Completed
                         </div>
                       )}
                     </div>
@@ -127,6 +132,19 @@ export function MatchesCarousel() {
                       </div>
                       <div className="text-xs text-gray-600 dark:text-gray-400 mt-1 truncate">
                         {match.venue}
+                      </div>
+                      <div className="h-5 mt-1">
+                        {match.finalStats && <div className="text-xs truncate">
+                          {match.finalStats}
+                        </div>}
+                      </div>
+                      <div className="h-5">
+                        {match.player_match && <div className="text-xs truncate">
+                          <span className="text-xs text-gray-600 dark:text-gray-400 truncate">
+                            MoF:
+                          </span>
+                          {' ' + match.player_match}
+                        </div>}
                       </div>
                     </div>
                   </CardContent>
