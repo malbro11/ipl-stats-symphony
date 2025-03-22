@@ -354,7 +354,7 @@ export const matches: Match[] = [
     "date": "2025-03-22T19:30:00+05:30",
     "venue": "Eden Gardens, Kolkata",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live"
   },
   {
     "id": "match2",
