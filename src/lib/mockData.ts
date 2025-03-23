@@ -11,6 +11,7 @@ export interface Team {
   lost: number;
   nrr: number;
   points: number;
+  rank: number;
 }
 
 export const teams: Team[] = [
@@ -24,7 +25,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 0,
     nrr: 0,
-    points: 0
+    points: 0,
+    rank: 3
   },
   {
     id: "mi",
@@ -36,7 +38,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 0,
     nrr: 0,
-    points: 0
+    points: 0,
+    rank: 4
   },
   {
     id: "rcb",
@@ -48,7 +51,8 @@ export const teams: Team[] = [
     won: 1,
     lost: 0,
     nrr: +2.137,
-    points: 2
+    points: 2,
+    rank: 2
   },
   {
     id: "gt",
@@ -60,7 +64,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 0,
     nrr: 0,
-    points: 0
+    points: 0,
+    rank: 5
   },
   {
     id: "lsg",
@@ -72,7 +77,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 0,
     nrr: 0,
-    points: 0
+    points: 0,
+    rank: 6
   },
   {
     id: "dc",
@@ -84,7 +90,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 0,
     nrr: 0,
-    points: 0
+    points: 0,
+    rank: 7
   },
   {
     id: "kkr",
@@ -96,7 +103,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 1,
     nrr: -2.137,
-    points: 0
+    points: 0,
+    rank: 9
   },
   {
     id: "rr",
@@ -108,7 +116,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 1,
     nrr: -2.200,
-    points: 0
+    points: 0,
+    rank: 10
   },
   {
     id: "pbks",
@@ -120,7 +129,8 @@ export const teams: Team[] = [
     won: 0,
     lost: 0,
     nrr: 0,
-    points: 0
+    points: 0,
+    rank: 8
   },
   {
     id: "srh",
@@ -132,7 +142,8 @@ export const teams: Team[] = [
     won: 1,
     lost: 0,
     nrr: +2.200,
-    points: 2
+    points: 2,
+    rank: 1
   }
 ];
 

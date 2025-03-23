@@ -12,12 +12,12 @@ import {
   TableRow
 } from "@/components/ui/table";
 
-type SortField = "points" | "nrr" | "matches" | "won" | "lost";
+type SortField = "points" | "nrr" | "matches" | "won" | "lost" | 'rank';
 type SortDirection = "asc" | "desc";
 
 export function PointsTable() {
-  const [sortField, setSortField] = useState<SortField>("points");
-  const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
+  const [sortField, setSortField] = useState<SortField>("rank");
+  const [sortDirection, setSortDirection] = useState<SortDirection>("asc");
   const location = useLocation();
   const isPointsTableRoute = location.pathname === "/points-table";
 
@@ -95,6 +95,12 @@ export function PointsTable() {
                 >
                   PTS {getSortIcon("points")}
                 </TableHead>
+                <TableHead 
+                  className="cursor-pointer text-center" 
+                  onClick={() => toggleSort("rank")}
+                >
+                  RANK {getSortIcon("rank")}
+                </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -140,6 +146,7 @@ export function PointsTable() {
                     </span>
                   </TableCell>
                   <TableCell className="text-center font-bold">{team.points}</TableCell>
+                  <TableCell className="text-center">{team.rank}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
