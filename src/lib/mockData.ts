@@ -21,11 +21,11 @@ export const teams: Team[] = [
     shortName: "CSK",
     logo: "/teams/csk.png",
     primaryColor: "#F7D133",
-    matches: 0,
-    won: 0,
+    matches: 1,
+    won: 1,
     lost: 0,
-    nrr: 0,
-    points: 0,
+    nrr: +0.493,
+    points: 2,
     rank: 3
   },
   {
@@ -34,12 +34,12 @@ export const teams: Team[] = [
     shortName: "MI",
     logo: "/teams/mi.png",
     primaryColor: "#0078BC",
-    matches: 0,
+    matches: 1,
     won: 0,
-    lost: 0,
-    nrr: 0,
+    lost: 1,
+    nrr: -0.493,
     points: 0,
-    rank: 4
+    rank: 8
   },
   {
     id: "rcb",
@@ -130,7 +130,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: 0,
     points: 0,
-    rank: 8
+    rank: 4
   },
   {
     id: "srh",
@@ -393,8 +393,11 @@ export const matches: Match[] = [
     "date": "2025-03-23T19:30:00+05:30",
     "venue": "MA Chidambaram Stadium, Chennai",
     "result": "Upcoming match",
-    "status": "Live",
-    finalStats: 'Chennai Super Kings opt to bowl',
+    team1Score: '158/6 (19.1)',
+    team2Score: '155/9 (20)',
+    "status": "Completed",
+    finalStats: 'Chennai Super Kings won by 4 wkts',
+    player_match: 'Noor Ahmad'
   },
   {
     "id": "match4",
