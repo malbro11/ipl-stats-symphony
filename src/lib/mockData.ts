@@ -369,10 +369,11 @@ export const matches: Match[] = [
     "date": "2025-03-23T15:30:00+05:30",
     "venue": "Rajiv Gandhi International Stadium, Hyderabad",
     "result": "Upcoming match",
-    "status": "Live",
-    finalStats: 'Rajasthan Royals opts to bowl',
+    "status": "Completed",
     team1Score: '286/6 (20)',
-    team2Score: 'Live',
+    team2Score: '242/6 (20)',
+    finalStats: 'Sunrisers Hyderabad won by 44 runs',
+    player_match: ''
   },
   {
     "id": "match3",
@@ -381,7 +382,8 @@ export const matches: Match[] = [
     "date": "2025-03-23T19:30:00+05:30",
     "venue": "MA Chidambaram Stadium, Chennai",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: 'Chennai Super Kings opt to bowl',
   },
   {
     "id": "match4",
