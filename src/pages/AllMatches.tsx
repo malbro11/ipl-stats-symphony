@@ -81,17 +81,17 @@ const AllMatches = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-4 mb-5">
-            <div className={`flex ${isMobile ? "flex-row" : ""} items-center w-full sm:w-2/5 justify-center sm:justify-start gap-3`}>
+            <div className={`flex items-center w-full sm:w-2/5 ${isMobile ? "justify-start" : "justify-center sm:justify-start"} gap-3`}>
               <div
                 className="w-14 h-14 flex-shrink-0 rounded-full flex items-center justify-center border-2"
                 style={{
                   backgroundColor: team1.primaryColor,
-                  borderColor: team1.secondaryColor || "#ffffff",
+                  borderColor: team1.primaryColor || "#ffffff",
                 }}
               >
                 <span className="text-white font-bold">{team1.shortName}</span>
               </div>
-              <div className="text-center sm:text-left">
+              <div className={`${isMobile ? "text-left" : "text-center sm:text-left"}`}>
                 <span className="text-base font-semibold block">{team1.name}</span>
                 {match?.team1Score !== undefined && (
                   <div className="text-base font-bold mt-1 text-primary">{match.team1Score}</div>
@@ -101,17 +101,17 @@ const AllMatches = () => {
 
             <div className="text-xl font-bold py-2 px-4 bg-muted rounded-full">VS</div>
 
-            <div className={`flex ${isMobile ? "flex-row" : "flex-row-reverse"} items-center w-full sm:w-2/5 justify-center sm:justify-start gap-3`}>
+            <div className={`flex items-center w-full sm:w-2/5 ${isMobile ? "justify-start" : "justify-center sm:justify-end"} gap-3`}>
               <div
                 className="w-14 h-14 flex-shrink-0 rounded-full flex items-center justify-center border-2"
                 style={{
                   backgroundColor: team2.primaryColor,
-                  borderColor: team2.secondaryColor || "#ffffff",
+                  borderColor: team2.primaryColor || "#ffffff",
                 }}
               >
                 <span className="text-white font-bold">{team2.shortName}</span>
               </div>
-              <div className={`text-center sm:${isMobile ? "text-left" : "text-right"}`}>
+              <div className={`${isMobile ? "text-left" : "text-center sm:text-right"}`}>
                 <span className="text-base font-semibold block">{team2.name}</span>
                 {match?.team2Score !== undefined && (
                   <div className="text-base font-bold mt-1 text-primary">{match.team2Score}</div>
@@ -182,7 +182,7 @@ const AllMatches = () => {
           className="w-full"
         >
           <TabsList className="mb-6 w-full sm:w-auto grid grid-cols-4 sm:flex">
-            <TabsTrigger value="all">All Matches</TabsTrigger>
+            <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="upcoming">Upcoming</TabsTrigger>
             <TabsTrigger value="live">Live</TabsTrigger>
             <TabsTrigger value="completed">Completed</TabsTrigger>
