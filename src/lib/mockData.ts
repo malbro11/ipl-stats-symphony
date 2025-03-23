@@ -384,7 +384,7 @@ export const matches: Match[] = [
     team1Score: '286/6 (20)',
     team2Score: '242/6 (20)',
     finalStats: 'Sunrisers Hyderabad won by 44 runs',
-    player_match: ''
+    player_match: 'Ishan Kishan'
   },
   {
     "id": "match3",
