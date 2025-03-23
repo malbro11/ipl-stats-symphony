@@ -9,7 +9,12 @@ import { format, parseISO, isAfter, isBefore } from "date-fns";
 export function MatchesCarousel() {
   // Get upcoming and live matches
   const [activeMatches] = useState(
-    matches.filter(match => match.status === "Upcoming" || match.status === "Live" || match.status === "Completed")
+    matches
+      .filter(match => ["Upcoming", "Live", "Completed"].includes(match.status))
+      .sort((a, b) => {
+        const order = { "Live": 1, "Upcoming": 2, "Completed": 3 };
+        return order[a.status] - order[b.status];
+      })
   );
 
   // Find the latest match (closest upcoming match to current date)
