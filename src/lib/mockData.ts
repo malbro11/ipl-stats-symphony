@@ -104,10 +104,10 @@ export const teams: Team[] = [
     shortName: "RR",
     logo: "/teams/rr.png",
     primaryColor: "#FF69B4",
-    matches: 0,
+    matches: 1,
     won: 0,
-    lost: 0,
-    nrr: 0,
+    lost: 1,
+    nrr: -2.200,
     points: 0
   },
   {
@@ -128,11 +128,11 @@ export const teams: Team[] = [
     shortName: "SRH",
     logo: "/teams/srh.png",
     primaryColor: "#F7A721",
-    matches: 0,
-    won: 0,
+    matches: 1,
+    won: 1,
     lost: 0,
-    nrr: 0,
-    points: 0
+    nrr: +2.200,
+    points: 2
   }
 ];
 
@@ -344,8 +344,8 @@ export interface Match {
   team1Score?: string;
   team2Score?: string;
   status: "Upcoming" | "Live" | "Completed";
-  finalStats?:string;
-  player_match?:string;
+  finalStats?: string;
+  player_match?: string;
 }
 
 export const matches: Match[] = [
