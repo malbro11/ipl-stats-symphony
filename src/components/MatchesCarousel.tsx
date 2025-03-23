@@ -43,7 +43,7 @@ export function MatchesCarousel() {
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold">IPL 2025 Upcoming Matches</h3>
         <Link to="/all-matches" className="flex items-center text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
-          View All Matches
+          View All
           <ArrowRight className="ml-1 h-4 w-4" />
         </Link>
       </div>

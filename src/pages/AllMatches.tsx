@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { matches, teams, Match } from "@/lib/mockData";
 import { Card, CardContent } from "@/components/ui/card";
@@ -21,20 +20,17 @@ const AllMatches = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const matchesPerPage = 5;
 
-  // Filter matches based on the selected tab
   const filteredMatches = matches.filter(match => {
     if (currentTab === "all") return true;
     return match.status.toLowerCase() === currentTab;
   });
 
-  // Sort matches by date, with live matches first
   const sortedMatches = [...filteredMatches].sort((a, b) => {
     if (a.status === "Live" && b.status !== "Live") return -1;
     if (a.status !== "Live" && b.status === "Live") return 1;
     return new Date(a.date).getTime() - new Date(b.date).getTime();
   });
 
-  // Paginate matches
   const indexOfLastMatch = currentPage * matchesPerPage;
   const indexOfFirstMatch = indexOfLastMatch - matchesPerPage;
   const currentMatches = sortedMatches.slice(indexOfFirstMatch, indexOfLastMatch);
@@ -57,7 +53,6 @@ const AllMatches = () => {
       }}>
         <CardContent className="p-4">
           <div className="flex justify-between items-center mb-3 relative">
-            {/* Status badges */}
             <div className="absolute -top-2 right-0 flex gap-2">
               {match.status === "Live" && (
                 <div className="bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -95,8 +90,8 @@ const AllMatches = () => {
 
               <div className="text-lg font-bold mx-4">VS</div>
 
-              <div className="flex items-center w-full sm:w-2/5 justify-center sm:justify-end">
-                <div className="mr-3 text-right">
+              <div className="flex items-center w-full sm:w-2/5 justify-center sm:justify-start">
+                <div className="mr-3 text-right hidden sm:block">
                   <span className="text-sm font-semibold">{team2.name}</span>
                   {match?.team2Score && (
                     <div className="text-sm font-bold mt-1">{match.team2Score}</div>
@@ -109,6 +104,12 @@ const AllMatches = () => {
                     borderRadius: "50%",
                   }}
                 ></div>
+                <div className="ml-3 sm:hidden">
+                  <span className="text-sm font-semibold">{team2.name}</span>
+                  {match?.team2Score && (
+                    <div className="text-sm font-bold mt-1">{match.team2Score}</div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
