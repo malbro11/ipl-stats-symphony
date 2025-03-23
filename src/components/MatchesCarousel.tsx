@@ -2,9 +2,10 @@
 import { useState, useMemo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import { Clock, Calendar } from "lucide-react";
+import { Clock, Calendar, ArrowRight } from "lucide-react";
 import { matches, teams } from "@/lib/mockData";
 import { format, parseISO, isAfter, isBefore } from "date-fns";
+import { Link } from "react-router-dom";
 
 export function MatchesCarousel() {
   // Get upcoming and live matches
@@ -41,6 +42,10 @@ export function MatchesCarousel() {
     <div className="py-4">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold">IPL 2025 Upcoming Matches</h3>
+        <Link to="/all-matches" className="flex items-center text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+          View All Matches
+          <ArrowRight className="ml-1 h-4 w-4" />
+        </Link>
       </div>
       <Carousel
         opts={{
