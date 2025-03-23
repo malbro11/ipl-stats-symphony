@@ -371,6 +371,8 @@ export const matches: Match[] = [
     "result": "Upcoming match",
     "status": "Live",
     finalStats: 'Rajasthan Royals opts to bowl',
+    team1Score: '286/6 (20)',
+    team2Score: 'Live',
   },
   {
     "id": "match3",
