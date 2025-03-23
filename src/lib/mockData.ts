@@ -369,7 +369,8 @@ export const matches: Match[] = [
     "date": "2025-03-23T15:30:00+05:30",
     "venue": "Rajiv Gandhi International Stadium, Hyderabad",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: 'Rajasthan Royals opts to bowl',
   },
   {
     "id": "match3",
