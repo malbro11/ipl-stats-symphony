@@ -60,7 +60,7 @@ const Index = () => {
 
           <YouTubeShorts />
 
-          <LiveMatchMeter />
+          {/* <LiveMatchMeter /> */}
 
           <div className="my-6">
             <AdSpot size="970x90" position="Above Points Table" />

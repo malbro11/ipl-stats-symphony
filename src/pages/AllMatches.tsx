@@ -76,7 +76,7 @@ const AllMatches = () => {
       >
         <CardContent className="p-5">
           <div className="flex justify-between items-center mb-4">
-            <h3 className="text-lg font-semibold">Match #{match.id.slice(-3)}</h3>
+            <h3 className="text-lg font-semibold">Match {match.id.slice(5)}</h3>
             <div className="flex gap-2">{getStatusBadge(match.status)}</div>
           </div>
 

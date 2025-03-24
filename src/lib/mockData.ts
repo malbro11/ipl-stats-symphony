@@ -73,12 +73,12 @@ export const teams: Team[] = [
     shortName: "LSG",
     logo: "/teams/lsg.png",
     primaryColor: "#4BA9E1",
-    matches: 0,
+    matches: 1,
     won: 0,
-    lost: 0,
-    nrr: 0,
+    lost: 1,
+    nrr: -0.371,
     points: 0,
-    rank: 6
+    rank: 7
   },
   {
     id: "dc",
@@ -86,12 +86,12 @@ export const teams: Team[] = [
     shortName: "DC",
     logo: "/teams/dc.png",
     primaryColor: "#0078BC",
-    matches: 0,
-    won: 0,
+    matches: 1,
+    won: 1,
     lost: 0,
-    nrr: 0,
+    nrr: +0.371,
     points: 0,
-    rank: 7
+    rank: 4
   },
   {
     id: "kkr",
@@ -130,7 +130,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: 0,
     points: 0,
-    rank: 4
+    rank: 6
   },
   {
     id: "srh",
@@ -406,11 +406,11 @@ export const matches: Match[] = [
     "date": "2025-03-24T19:30:00+05:30",
     "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
     "result": "Upcoming match",
-    "status": "Live",
+    "status": "Completed",
     finalStats: 'Delhi Capitals won by 1 wkt',
     team1Score: '211/9 (19.3)',
     team2Score: '209/8 (20)',
-    player_match: ''
+    player_match: 'Ashutosh Sharma'
   },
   {
     "id": "match5",
