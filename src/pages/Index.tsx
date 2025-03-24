@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { PointsTable } from "@/components/PointsTable";
 import { TopPerformers } from "@/components/TopPerformers";
@@ -29,7 +28,6 @@ const Index = () => {
         />
         <meta name="author" content="IPL 2025 Live Updates" />
 
-        {/* Open Graph (Facebook, WhatsApp) */}
         <meta property="og:title" content="IPL 2025 Live Updates | Match Highlights & Stats" />
         <meta 
           property="og:description" 
@@ -39,7 +37,6 @@ const Index = () => {
         <meta property="og:url" content="https://ipl2025.site/" />
         <meta property="og:type" content="website" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="IPL 2025 Live Updates | Match Highlights & Stats" />
         <meta 
@@ -48,7 +45,6 @@ const Index = () => {
         />
         <meta name="twitter:image" content="https://ipl2025.site/banner.webp" />
 
-        {/* Canonical URL */}
         <link rel="canonical" href="https://ipl2025.site/" />
       </Helmet>
       <div id="content">
@@ -58,20 +54,16 @@ const Index = () => {
             <ViewerCounter />
           </div>
           
-          {/* Matches Carousel */}
           <section className="mb-6">
             <MatchesCarousel />
           </section>
           
-          {/* Featured SIP Ad */}
           <div className="my-6">
             <AdSpot size="970x90" position="Above Points Table" />
           </div>
           
-          {/* YouTube Shorts */}
           <YouTubeShorts />
           
-          {/* Live Match Meter */}
           <LiveMatchMeter />
         </div>
         
