@@ -407,9 +407,10 @@ export const matches: Match[] = [
     "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
     "result": "Upcoming match",
     "status": "Live",
-    finalStats: 'Miller Seals the final over',
-    team1Score: '',
+    finalStats: 'Delhi Capitals won by 1 wkt',
+    team1Score: '211/9 (19.3)',
     team2Score: '209/8 (20)',
+    player_match: ''
   },
   {
     "id": "match5",
