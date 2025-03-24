@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Youtube } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export function YouTubeShorts() {
   const [currentVideo, setCurrentVideo] = useState(0);
@@ -22,14 +23,14 @@ export function YouTubeShorts() {
   };
   
   return (
-    <section className="my-8 relative z-10">
+    <section className="my-8 py-4 relative bg-background" style={{ zIndex: 10 }}>
       <div className="container mx-auto px-4">
         <div className="flex items-center mb-4">
           <Youtube className="h-6 w-6 text-red-600 mr-2" />
           <h3 className="text-xl font-bold">IPL Shorts</h3>
         </div>
         
-        <Card className="overflow-hidden border-2 border-red-100 dark:border-red-900/30 shadow-lg">
+        <Card className="overflow-hidden border-2 border-red-100 dark:border-red-900/30 shadow-xl">
           <CardContent className="p-0">
             <div className="aspect-video w-full">
               <iframe
@@ -38,27 +39,32 @@ export function YouTubeShorts() {
                 title={shorts[currentVideo].title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                loading="lazy"
               ></iframe>
             </div>
             
             <div className="p-4">
               <h4 className="font-semibold">{shorts[currentVideo].title}</h4>
               <div className="flex justify-between mt-3">
-                <button 
+                <Button 
                   onClick={handlePrev}
-                  className="px-3 py-1 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded text-sm font-medium transition-colors"
+                  variant="outline"
+                  size="sm"
+                  className="text-sm font-medium"
                 >
                   Previous
-                </button>
-                <span className="text-sm text-muted-foreground">
+                </Button>
+                <span className="text-sm text-muted-foreground flex items-center">
                   {currentVideo + 1} of {shorts.length}
                 </span>
-                <button 
+                <Button 
                   onClick={handleNext}
-                  className="px-3 py-1 bg-red-100 hover:bg-red-200 dark:bg-red-900/30 dark:hover:bg-red-800/50 rounded text-sm font-medium transition-colors"
+                  variant="default"
+                  size="sm"
+                  className="bg-red-500 hover:bg-red-600 text-white text-sm font-medium"
                 >
                   Next
-                </button>
+                </Button>
               </div>
             </div>
           </CardContent>
