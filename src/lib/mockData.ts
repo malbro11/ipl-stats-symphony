@@ -407,7 +407,9 @@ export const matches: Match[] = [
     "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
     "result": "Upcoming match",
     "status": "Live",
-    finalStats: 'Delhi Capitals opt to bowl',
+    finalStats: 'Miller Seals the final over',
+    team1Score: '',
+    team2Score: '209/8 (20)',
   },
   {
     "id": "match5",
