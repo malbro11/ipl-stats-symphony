@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { Coins, TrendingUp, PiggyBank, ChartBar, ArrowUpCircle, Scissors, PiSquare, Image, Palette, BarChart } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 type AdSpotProps = {
   size: string;

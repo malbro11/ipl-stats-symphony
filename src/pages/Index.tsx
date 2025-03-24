@@ -18,20 +18,20 @@ const Index = () => {
     <Layout>
       <Helmet>
         <title>IPL 2025 Points Table, Match Highlights & Stats</title>
-        <meta 
-          name="description" 
-          content="Get the latest IPL 2025 updates, points table standings, match highlights, top performers, and player comparisons. Stay updated with real-time stats!" 
+        <meta
+          name="description"
+          content="Get the latest IPL 2025 updates, points table standings, match highlights, top performers, and player comparisons. Stay updated with real-time stats!"
         />
-        <meta 
-          name="keywords" 
-          content="IPL 2025, IPL live scores, IPL points table, IPL match highlights, IPL stats, Indian Premier League" 
+        <meta
+          name="keywords"
+          content="IPL 2025, IPL live scores, IPL points table, IPL match highlights, IPL stats, Indian Premier League"
         />
         <meta name="author" content="IPL 2025 Live Updates" />
 
         <meta property="og:title" content="IPL 2025 Live Updates | Match Highlights & Stats" />
-        <meta 
-          property="og:description" 
-          content="Follow IPL 2025 with real-time match highlights, points table standings, and top performer stats. Stay ahead with all the action!" 
+        <meta
+          property="og:description"
+          content="Follow IPL 2025 with real-time match highlights, points table standings, and top performer stats. Stay ahead with all the action!"
         />
         <meta property="og:image" content="https://ipl2025.site/banner.webp" />
         <meta property="og:url" content="https://ipl2025.site/" />
@@ -39,9 +39,9 @@ const Index = () => {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="IPL 2025 Live Updates | Match Highlights & Stats" />
-        <meta 
-          name="twitter:description" 
-          content="Live IPL 2025 match highlights, points table updates, and top performer stats in real-time!" 
+        <meta
+          name="twitter:description"
+          content="Live IPL 2025 match highlights, points table updates, and top performer stats in real-time!"
         />
         <meta name="twitter:image" content="https://ipl2025.site/banner.webp" />
 
@@ -53,20 +53,20 @@ const Index = () => {
             <h2 className="text-2xl font-bold">IPL 2025 Season</h2>
             <ViewerCounter />
           </div>
-          
+
           <section className="mb-6">
             <MatchesCarousel />
           </section>
-          
+
+          <YouTubeShorts />
+
+          <LiveMatchMeter />
+
           <div className="my-6">
             <AdSpot size="970x90" position="Above Points Table" />
           </div>
-          
-          <YouTubeShorts />
-          
-          <LiveMatchMeter />
         </div>
-        
+
         <div id="points-table">
           <PointsTable />
           {!isPointsTableRoute && (
@@ -75,7 +75,7 @@ const Index = () => {
             </div>
           )}
         </div>
-        
+
         {!isPointsTableRoute && (
           <>
             <div id="top-performers">
@@ -84,7 +84,7 @@ const Index = () => {
                 <AdSpot size="300x250" position="Below Top Performers" />
               </div>
             </div>
-            
+
             <div id="player-comparison">
               <PlayerComparison />
               <div className="container mx-auto px-4">
