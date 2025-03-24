@@ -8,10 +8,11 @@ export function YouTubeShorts() {
   const [currentVideo, setCurrentVideo] = useState(0);
   
   const shorts = [
-    { id: "6CZM7yUx4uw", title: "Best IPL 2025 Moments" },
-    { id: "W7F9T0bZj9Q", title: "Top Catches of the Week" },
-    { id: "oYJAzs0mMX8", title: "Fastest Deliveries This Season" },
-    { id: "S3QW1QZU_sk", title: "Incredible Batting Display" }
+    { id: "uqqQfo3Z-4c", title: "Best IPL 2025 Moments" },
+    { id: "sasFGckg69A", title: "Opening Cermony" },
+    { id: "ffyAbKFP0CI", title: "Best Catch" },
+    { id: "dsWpAUuxN1s", title: "Legend" },
+    { id: "azvoktSsgbY", title: "Roasting" }
   ];
   
   const handleNext = () => {
@@ -34,11 +35,10 @@ export function YouTubeShorts() {
           <CardContent className="p-0">
             <div className="aspect-video w-full">
               <iframe
-                className="w-full h-full"
-                src={`https://www.youtube.com/embed/${shorts[currentVideo].id}?autoplay=0&controls=1&rel=0&showinfo=0`}
+                className="w-full h-[20rem] md:h-full"
+                src={`https://www.youtube.com/embed/${shorts[currentVideo].id}?autoplay=1&mute=1&controls=1&rel=0&showinfo=0`}
                 title={shorts[currentVideo].title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
                 loading="lazy"
               ></iframe>
             </div>
