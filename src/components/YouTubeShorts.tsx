@@ -22,16 +22,16 @@ export function YouTubeShorts() {
   };
   
   return (
-    <section className="my-8">
+    <section className="my-8 relative z-10">
       <div className="container mx-auto px-4">
         <div className="flex items-center mb-4">
           <Youtube className="h-6 w-6 text-red-600 mr-2" />
           <h3 className="text-xl font-bold">IPL Shorts</h3>
         </div>
         
-        <Card className="overflow-hidden border-2 border-red-100 dark:border-red-900/30">
+        <Card className="overflow-hidden border-2 border-red-100 dark:border-red-900/30 shadow-lg">
           <CardContent className="p-0">
-            <div className="aspect-video">
+            <div className="aspect-video w-full">
               <iframe
                 className="w-full h-full"
                 src={`https://www.youtube.com/embed/${shorts[currentVideo].id}?autoplay=0&controls=1&rel=0&showinfo=0`}
