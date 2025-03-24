@@ -406,7 +406,8 @@ export const matches: Match[] = [
     "date": "2025-03-24T19:30:00+05:30",
     "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: 'Delhi Capitals opt to bowl',
   },
   {
     "id": "match5",
