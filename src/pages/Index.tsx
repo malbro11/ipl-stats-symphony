@@ -63,7 +63,10 @@ const Index = () => {
             <MatchesCarousel />
           </section>
           
-          <AdSpot size="970x90" position="Above Points Table" />
+          {/* Featured SIP Ad */}
+          <div className="my-6">
+            <AdSpot size="970x90" position="Above Points Table" />
+          </div>
           
           {/* YouTube Shorts */}
           <YouTubeShorts />
@@ -74,19 +77,27 @@ const Index = () => {
         
         <div id="points-table">
           <PointsTable />
-          {!isPointsTableRoute && <AdSpot size="728x90" position="Below Points Table" />}
+          {!isPointsTableRoute && (
+            <div className="container mx-auto px-4">
+              <AdSpot size="728x90" position="Below Points Table" />
+            </div>
+          )}
         </div>
         
         {!isPointsTableRoute && (
           <>
             <div id="top-performers">
               <TopPerformers />
-              <AdSpot size="300x250" position="Below Top Performers" />
+              <div className="container mx-auto px-4">
+                <AdSpot size="300x250" position="Below Top Performers" />
+              </div>
             </div>
             
             <div id="player-comparison">
               <PlayerComparison />
-              <AdSpot size="970x250" position="Below Player Comparison" />
+              <div className="container mx-auto px-4">
+                <AdSpot size="970x250" position="Below Player Comparison" />
+              </div>
             </div>
           </>
         )}
