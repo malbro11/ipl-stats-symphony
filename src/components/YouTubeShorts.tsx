@@ -36,7 +36,7 @@ export function YouTubeShorts() {
             <div className="aspect-video w-full">
               <iframe
                 className="w-full h-[20rem] md:h-full"
-                src={`https://www.youtube.com/embed/${shorts[currentVideo].id}?autoplay=1&mute=1&controls=1&rel=0&showinfo=0`}
+                src={`https://www.youtube.com/embed/${shorts[currentVideo].id}?autoplay=1&mute=1&controls=1&rel=0&showinfo=0&loop=1&playlist=${shorts[currentVideo].id}`}
                 title={shorts[currentVideo].title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 loading="lazy"
