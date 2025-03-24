@@ -8,6 +8,7 @@ import { AdSpot } from "@/components/AdSpot";
 import { ViewerCounter } from "@/components/ViewerCounter";
 import { MatchesCarousel } from "@/components/MatchesCarousel";
 import { LiveMatchMeter } from "@/components/LiveMatchMeter";
+import { YouTubeShorts } from "@/components/YouTubeShorts";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
@@ -63,6 +64,9 @@ const Index = () => {
           </section>
           
           <AdSpot size="970x90" position="Above Points Table" />
+          
+          {/* YouTube Shorts */}
+          <YouTubeShorts />
           
           {/* Live Match Meter */}
           <LiveMatchMeter />
