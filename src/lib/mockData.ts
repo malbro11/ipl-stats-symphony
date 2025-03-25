@@ -420,7 +420,10 @@ export const matches: Match[] = [
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
     "status": "Live",
-   finalStats: 'Gujarat Titans opt to bowl' 
+   finalStats: 'Shreyas scored 97',
+    team1Score: '',
+    team2Score: '243/5 (20)',
+    player_match: ''
   },
   {
     "id": "match6",
