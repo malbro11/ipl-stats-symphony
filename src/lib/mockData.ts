@@ -419,7 +419,8 @@ export const matches: Match[] = [
     "date": "2025-03-25T19:30:00+05:30",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+   finalStats: 'Gujarat Titans opt to bowl' 
   },
   {
     "id": "match6",
