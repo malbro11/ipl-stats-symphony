@@ -421,7 +421,7 @@ export const matches: Match[] = [
     "result": "Upcoming match",
     "status": "Live",
    finalStats: 'Shreyas scored 97',
-    team1Score: '',
+    team1Score: '93/1 (9)',
     team2Score: '243/5 (20)',
     player_match: ''
   },
