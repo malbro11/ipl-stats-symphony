@@ -419,7 +419,7 @@ export const matches: Match[] = [
     "date": "2025-03-25T19:30:00+05:30",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
-    "status": "Live",
+    "status": "Completed",
    finalStats: 'Punjab Kings won by 11 runs',
     team1Score: '232/5 (20)',
     team2Score: '243/5 (20)',
