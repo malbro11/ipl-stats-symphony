@@ -420,10 +420,10 @@ export const matches: Match[] = [
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
     "status": "Live",
-   finalStats: 'Shreyas scored 97',
-    team1Score: '93/1 (9)',
+   finalStats: 'Punjab Kings won by 11 runs',
+    team1Score: '232/5 (20)',
     team2Score: '243/5 (20)',
-    player_match: ''
+    player_match: 'Shreyas Iyer'
   },
   {
     "id": "match6",
