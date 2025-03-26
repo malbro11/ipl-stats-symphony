@@ -26,7 +26,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: +0.493,
     points: 2,
-    rank: 3
+    rank: 4
   },
   {
     id: "mi",
@@ -39,7 +39,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.493,
     points: 0,
-    rank: 8
+    rank: 7
   },
   {
     id: "rcb",
@@ -60,12 +60,12 @@ export const teams: Team[] = [
     shortName: "GT",
     logo: "/teams/gt.png",
     primaryColor: "#1A1F2C",
-    matches: 0,
+    matches: 1,
     won: 0,
-    lost: 0,
-    nrr: 0,
+    lost: 1,
+    nrr: -0.55,
     points: 0,
-    rank: 5
+    rank: 8
   },
   {
     id: "lsg",
@@ -78,7 +78,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.371,
     points: 0,
-    rank: 7
+    rank: 6
   },
   {
     id: "dc",
@@ -91,7 +91,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: +0.371,
     points: 0,
-    rank: 4
+    rank: 5
   },
   {
     id: "kkr",
@@ -125,12 +125,12 @@ export const teams: Team[] = [
     shortName: "PBKS",
     logo: "/teams/pbks.png",
     primaryColor: "#D71920",
-    matches: 0,
-    won: 0,
+    matches: 1,
+    won: 1,
     lost: 0,
-    nrr: 0,
-    points: 0,
-    rank: 6
+    nrr: 0.55,
+    points: 2,
+    rank: 3
   },
   {
     id: "srh",
@@ -431,8 +431,9 @@ export const matches: Match[] = [
     "team2Id": "kkr",
     "date": "2025-03-26T19:30:00+05:30",
     "venue": "Barsapara Cricket Stadium, Guwahati",
-    "result": "Upcoming match",
-    "status": "Upcoming"
+    "result": "",
+    "status": "Live",
+    finalStats: 'KKR opts to bowl',
   },
   {
     "id": "match7",
