@@ -39,7 +39,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.493,
     points: 0,
-    rank: 7
+    rank: 8
   },
   {
     id: "rcb",
@@ -65,7 +65,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.55,
     points: 0,
-    rank: 8
+    rank: 9
   },
   {
     id: "lsg",
@@ -78,7 +78,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.371,
     points: 0,
-    rank: 6
+    rank: 7
   },
   {
     id: "dc",
@@ -99,12 +99,12 @@ export const teams: Team[] = [
     shortName: "KKR",
     logo: "/teams/kkr.png",
     primaryColor: "#3A225D",
-    matches: 1,
-    won: 0,
+    matches: 2,
+    won: 1,
     lost: 1,
-    nrr: -2.137,
+    nrr: -0.308,
     points: 0,
-    rank: 9
+    rank: 6
   },
   {
     id: "rr",
@@ -114,8 +114,8 @@ export const teams: Team[] = [
     primaryColor: "#FF69B4",
     matches: 1,
     won: 0,
-    lost: 1,
-    nrr: -2.200,
+    lost: 2,
+    nrr: -1.882,
     points: 0,
     rank: 10
   },
@@ -431,9 +431,12 @@ export const matches: Match[] = [
     "team2Id": "kkr",
     "date": "2025-03-26T19:30:00+05:30",
     "venue": "Barsapara Cricket Stadium, Guwahati",
-    "result": "",
-    "status": "Live",
-    finalStats: 'KKR opts to bowl',
+    "result": "Kolkata Knight Riders won by 8 wkts",
+    "status": "Completed",
+    finalStats: 'Kolkata Knight Riders won by 8 wkts',
+    team1Score: '151/9 (20)',
+    team2Score: '153/2 (17.3)',
+    player_match: 'Quinton de Kock'
   },
   {
     "id": "match7",
