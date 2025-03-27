@@ -446,9 +446,9 @@ export const matches: Match[] = [
     "venue": "Rajiv Gandhi International Stadium, Hyderabad",
     "result": "Upcoming match",
     "status": "Live",
-    finalStats: 'Travis Head still on play',
-    team1Score: '71/2 (7)',
-    team2Score: '',
+    finalStats: 'Lucknow Super Giants need 95 runs in 78 balls',
+    team1Score: '190/9 (20)',
+    team2Score: '96/1 (7) ',
     player_match: ''
   },
   {
