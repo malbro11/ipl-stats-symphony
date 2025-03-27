@@ -445,7 +445,11 @@ export const matches: Match[] = [
     "date": "2025-03-27T19:30:00+05:30",
     "venue": "Rajiv Gandhi International Stadium, Hyderabad",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: 'Travis Head still on play',
+    team1Score: '71/2 (7)',
+    team2Score: '',
+    player_match: ''
   },
   {
     "id": "match8",
