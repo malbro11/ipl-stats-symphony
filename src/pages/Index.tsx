@@ -20,11 +20,11 @@ const Index = () => {
         <title>IPL 2025 Points Table, Match Highlights & Stats</title>
         <meta
           name="description"
-          content="Get the latest IPL 2025 updates, points table standings, match highlights, top performers, and player comparisons. Stay updated with real-time stats!"
+          content="Get the latest IPL 2025 updates Chennai Super Kings vs Royal Challengers Bengaluru, points table standings, match highlights, top performers, and player comparisons. Stay updated with real-time stats!"
         />
         <meta
           name="keywords"
-          content="IPL 2025, IPL live scores, IPL points table, IPL match highlights, IPL stats, Indian Premier League"
+          content="IPL 2025, IPL live scores Chennai Super Kings vs Royal Challengers Bengaluru, IPL points table, IPL match highlights, IPL stats, Indian Premier League"
         />
         <meta name="author" content="IPL 2025 Live Updates" />
 
@@ -47,7 +47,11 @@ const Index = () => {
 
         <link rel="canonical" href="https://ipl2025.site/" />
       </Helmet>
+
       <div id="content">
+        <div className="container mx-auto px-4 py-4">
+          <h1>Chennai Super Kings vs Royal Challengers Bengaluru</h1>
+        </div>
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
             <h2 className="text-2xl font-bold">IPL 2025 Season</h2>
@@ -74,6 +78,37 @@ const Index = () => {
               <AdSpot size="728x90" position="Below Points Table" />
             </div>
           )}
+        </div>
+
+        <div className="container mx-auto px-6 py-8  rounded-lg shadow-lg">
+          <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">Chennai Super Kings vs Royal Challengers Bengaluru</h1>
+
+          <p className="text-lg  leading-relaxed text-center">The much-awaited clash between <strong>Chennai Super Kings (CSK)</strong> and <strong>Royal Challengers Bengaluru (RCB)</strong> in the IPL 2025 season is set to be a thrilling contest. Cricket fans across the world eagerly anticipate this high-stakes match.</p>
+
+          <div className="mt-6 p-6  rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold  mb-4">CSK vs RCB Match 2025: Live Updates & Prediction</h2>
+            <p className="">Fans are eagerly searching for the <strong>CSK vs RCB live score</strong> and updates on who will win the match. With star players in both teams, this encounter promises intense action.</p>
+          </div>
+
+          <div className="mt-6 p-6  rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold  mb-4">CSK vs RCB Head-to-Head & Stats Comparison</h2>
+            <p className="">Looking at the <strong>CSK vs RCB head-to-head</strong> record, Chennai Super Kings have had an upper hand historically. However, Royal Challengers Bengaluru have made strong additions to their squad this season.</p>
+          </div>
+
+          <div className="mt-6 p-6  rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold mb-4">CSK vs RCB 2025 Match Prediction</h2>
+            <p className="">Many cricket analysts and Dream11 experts are making their <strong>CSK vs RCB 2025 match prediction</strong>. The battle between CSK’s experienced squad and RCB’s power hitters will be key.</p>
+          </div>
+
+          <div className="mt-6 p-6  rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold  mb-4">Who Will Win CSK vs RCB Match?</h2>
+            <p className="">The question on everyone’s mind: <strong>Who will win CSK vs RCB match?</strong> Stay tuned for expert analysis and match highlights.</p>
+          </div>
+
+          <div className="mt-6 p-6  rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold  mb-4">CSK vs RCB IPL Highlights Today</h2>
+            <p className="">Missed the match? Catch all the <strong>CSK vs RCB IPL highlights today</strong> and relive the best moments.</p>
+          </div>
         </div>
 
         {!isPointsTableRoute && (

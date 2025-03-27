@@ -52,7 +52,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: +2.137,
     points: 2,
-    rank: 2
+    rank: 1
   },
   {
     id: "gt",
@@ -73,12 +73,12 @@ export const teams: Team[] = [
     shortName: "LSG",
     logo: "/teams/lsg.png",
     primaryColor: "#4BA9E1",
-    matches: 1,
-    won: 0,
+    matches: 2,
+    won: 1,
     lost: 1,
-    nrr: -0.371,
-    points: 0,
-    rank: 7
+    nrr: +0.963,
+    points: 2,
+    rank: 2
   },
   {
     id: "dc",
@@ -104,7 +104,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.308,
     points: 0,
-    rank: 6
+    rank: 7
   },
   {
     id: "rr",
@@ -138,12 +138,12 @@ export const teams: Team[] = [
     shortName: "SRH",
     logo: "/teams/srh.png",
     primaryColor: "#F7A721",
-    matches: 1,
+    matches: 2,
     won: 1,
-    lost: 0,
-    nrr: +2.200,
+    lost: 1,
+    nrr: 	-0.128,
     points: 2,
-    rank: 1
+    rank: 6
   }
 ];
 
@@ -446,10 +446,10 @@ export const matches: Match[] = [
     "venue": "Rajiv Gandhi International Stadium, Hyderabad",
     "result": "Upcoming match",
     "status": "Live",
-    finalStats: 'Lucknow Super Giants need 95 runs in 78 balls',
+    finalStats: 'Lucknow Super Giants won by 5 wkts',
     team1Score: '190/9 (20)',
-    team2Score: '96/1 (7) ',
-    player_match: ''
+    team2Score: '193/5 (16.1)',
+    player_match: 'Nicholas Pooran'
   },
   {
     "id": "match8",

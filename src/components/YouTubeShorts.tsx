@@ -8,6 +8,8 @@ export function YouTubeShorts() {
   const [currentVideo, setCurrentVideo] = useState(0);
   
   const shorts = [
+    { id: "FJVLUmSfHy8", title: "Virat Kholi E Sala cup namde" },
+    { id: "iXLX6ddd7cI", title: "Virat Kholi E Sala cup namde" },
     { id: "3kwBYeU27Rk", title: "Delhi Capitals Win Ashutosh Shines" },
     { id: "h4tgZqfIdOw", title: "Best IPL 2025 Moments" },
     { id: "sasFGckg69A", title: "Opening Cermony" },
