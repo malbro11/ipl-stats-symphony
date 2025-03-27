@@ -449,7 +449,7 @@ export const matches: Match[] = [
     finalStats: 'Lucknow Super Giants won by 5 wkts',
     team1Score: '190/9 (20)',
     team2Score: '193/5 (16.1)',
-    player_match: 'Nicholas Pooran'
+    player_match: 'Shardul Thakur'
   },
   {
     "id": "match8",
