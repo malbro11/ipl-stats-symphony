@@ -462,7 +462,7 @@ export const matches: Match[] = [
     finalStats: "Chennai Super Kings need 172 runs in 94 balls",
     team1Score: '146/8 (20)',
     team2Score: '196/7 (20)',
-    player_match: ''
+    player_match: 'Rajat Patidar'
   },
   {
     "id": "match9",
