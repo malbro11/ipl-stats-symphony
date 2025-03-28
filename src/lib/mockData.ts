@@ -445,7 +445,7 @@ export const matches: Match[] = [
     "date": "2025-03-27T19:30:00+05:30",
     "venue": "Rajiv Gandhi International Stadium, Hyderabad",
     "result": "Upcoming match",
-    "status": "Live",
+    "status": "Completed",
     finalStats: 'Lucknow Super Giants won by 5 wkts',
     team1Score: '190/9 (20)',
     team2Score: '193/5 (16.1)',
