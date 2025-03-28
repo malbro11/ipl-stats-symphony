@@ -458,7 +458,11 @@ export const matches: Match[] = [
     "date": "2025-03-28T19:30:00+05:30",
     "venue": "MA Chidambaram Stadium, Chennai",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: "Chennai Super Kings opt to bowl",
+    team1Score: '',
+    team2Score: '',
+    player_match: ''
   },
   {
     "id": "match9",
