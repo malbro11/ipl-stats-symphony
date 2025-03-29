@@ -472,7 +472,10 @@ export const matches: Match[] = [
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
     "status": "Live",
-    finalStats: 'Mumbai Indians opt to bowl'
+    finalStats: 'Mumbai Indians need 162 runs in 94 balls',
+    team1Score: '196/8 (20)',
+    team2Score: '35/2 (4.3) ',
+    player_match: ''
   },
   {
     "id": "match10",
