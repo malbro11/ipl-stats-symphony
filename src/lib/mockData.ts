@@ -26,7 +26,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: 	-1.013,
     points: 2,
-    rank: 7
+    rank: 8
   },
   {
     id: "mi",
@@ -34,12 +34,12 @@ export const teams: Team[] = [
     shortName: "MI",
     logo: "/teams/mi.png",
     primaryColor: "#0078BC",
-    matches: 1,
+    matches: 2,
     won: 0,
-    lost: 1,
-    nrr: -0.493,
+    lost: 2,
+    nrr: -1.163,
     points: 0,
-    rank: 8
+    rank: 9
   },
   {
     id: "rcb",
@@ -60,12 +60,12 @@ export const teams: Team[] = [
     shortName: "GT",
     logo: "/teams/gt.png",
     primaryColor: "#1A1F2C",
-    matches: 1,
-    won: 0,
+    matches: 2,
+    won: 1,
     lost: 1,
-    nrr: -0.55,
+    nrr: +0.625,
     points: 0,
-    rank: 9
+    rank: 3
   },
   {
     id: "lsg",
@@ -91,7 +91,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: +0.371,
     points: 0,
-    rank: 4
+    rank: 5
   },
   {
     id: "kkr",
@@ -104,7 +104,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.308,
     points: 0,
-    rank: 6
+    rank: 7
   },
   {
     id: "rr",
@@ -130,7 +130,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: 0.55,
     points: 2,
-    rank: 3
+    rank: 4
   },
   {
     id: "srh",
@@ -143,7 +143,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: 	-0.128,
     points: 2,
-    rank: 5
+    rank: 6
   }
 ];
 
@@ -472,10 +472,10 @@ export const matches: Match[] = [
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
     "status": "Live",
-    finalStats: 'Mumbai Indians need 162 runs in 94 balls',
+    finalStats: 'Gujarat Titans won by 36 runs',
     team1Score: '196/8 (20)',
-    team2Score: '35/2 (4.3) ',
-    player_match: ''
+    team2Score: '160/6 (20)',
+    player_match: 'Prasidh Krishna'
   },
   {
     "id": "match10",
