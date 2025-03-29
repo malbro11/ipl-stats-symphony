@@ -21,12 +21,12 @@ export const teams: Team[] = [
     shortName: "CSK",
     logo: "/teams/csk.png",
     primaryColor: "#F7D133",
-    matches: 1,
+    matches: 2,
     won: 1,
-    lost: 0,
-    nrr: +0.493,
+    lost: 1,
+    nrr: 	-1.013,
     points: 2,
-    rank: 4
+    rank: 7
   },
   {
     id: "mi",
@@ -47,10 +47,10 @@ export const teams: Team[] = [
     shortName: "RCB",
     logo: "/teams/rcb.png",
     primaryColor: "#D71920",
-    matches: 1,
-    won: 1,
+    matches: 2,
+    won: 2,
     lost: 0,
-    nrr: +2.137,
+    nrr: +2.266,
     points: 2,
     rank: 1
   },
@@ -91,7 +91,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: +0.371,
     points: 0,
-    rank: 5
+    rank: 4
   },
   {
     id: "kkr",
@@ -104,7 +104,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.308,
     points: 0,
-    rank: 7
+    rank: 6
   },
   {
     id: "rr",
@@ -143,7 +143,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: 	-0.128,
     points: 2,
-    rank: 6
+    rank: 5
   }
 ];
 
@@ -471,7 +471,8 @@ export const matches: Match[] = [
     "date": "2025-03-29T19:30:00+05:30",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: 'Mumbai Indians opt to bowl'
   },
   {
     "id": "match10",
