@@ -471,7 +471,7 @@ export const matches: Match[] = [
     "date": "2025-03-29T19:30:00+05:30",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "result": "Upcoming match",
-    "status": "Live",
+    "status": "Completed",
     finalStats: 'Gujarat Titans won by 36 runs',
     team1Score: '196/8 (20)',
     team2Score: '160/6 (20)',
@@ -484,7 +484,11 @@ export const matches: Match[] = [
     "date": "2025-03-30T15:30:00+05:30",
     "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
     "result": "Upcoming match",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: 'Innings Break',
+    team1Score: '',
+    team2Score: '163 (18.4)',
+    player_match: ''
   }
 ];
 
