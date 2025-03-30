@@ -21,12 +21,12 @@ export const teams: Team[] = [
     shortName: "CSK",
     logo: "/teams/csk.png",
     primaryColor: "#F7D133",
-    matches: 2,
+    matches: 3,
     won: 1,
-    lost: 1,
-    nrr: 	-1.013,
+    lost: 2,
+    nrr: 	-0.771,
     points: 2,
-    rank: 8
+    rank: 7
   },
   {
     id: "mi",
@@ -39,7 +39,7 @@ export const teams: Team[] = [
     lost: 2,
     nrr: -1.163,
     points: 0,
-    rank: 9
+    rank: 10
   },
   {
     id: "rcb",
@@ -112,12 +112,12 @@ export const teams: Team[] = [
     shortName: "RR",
     logo: "/teams/rr.png",
     primaryColor: "#FF69B4",
-    matches: 1,
-    won: 0,
+    matches: 3,
+    won: 1,
     lost: 2,
-    nrr: -1.882,
-    points: 0,
-    rank: 10
+    nrr: 	-1.112,
+    points: 2,
+    rank: 9
   },
   {
     id: "pbks",
@@ -143,7 +143,7 @@ export const teams: Team[] = [
     lost: 2,
     nrr: 	-0.871,
     points: 2,
-    rank: 7
+    rank: 8
   }
 ];
 
@@ -488,7 +488,7 @@ export const matches: Match[] = [
     finalStats: 'Delhi Capitals won by 7 wkts',
     team1Score: '166/3 (16)',
     team2Score: '163 (18.4)',
-    player_match: ''
+    player_match: 'Mitchell Starc'
   },
   {
     "id": "match11",
@@ -497,8 +497,11 @@ export const matches: Match[] = [
     "date": "2025-03-30T19:30:00+05:30",
     "venue": "Barsapara Cricket Stadium, Guwahati",
     "result": "Upcoming",
-    "status": "Live",
-    finalStats: 'Chennai Super Kings opt to bowl'
+    "status": "Completed",
+    finalStats: 'Rajasthan Royals won by 6 runs',
+    team1Score: '182/9 (20)',
+    team2Score: '176/6 (20)',
+    player_match: 'Nitish Rana'
   },
   {
     "id": "match12",
