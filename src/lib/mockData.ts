@@ -51,7 +51,7 @@ export const teams: Team[] = [
     won: 2,
     lost: 0,
     nrr: +2.266,
-    points: 2,
+    points: 4,
     rank: 1
   },
   {
@@ -64,7 +64,7 @@ export const teams: Team[] = [
     won: 1,
     lost: 1,
     nrr: +0.625,
-    points: 0,
+    points: 2,
     rank: 4
   },
   {
@@ -90,7 +90,7 @@ export const teams: Team[] = [
     won: 2,
     lost: 0,
     nrr: +1.320,
-    points: 0,
+    points: 4,
     rank: 2
   },
   {
@@ -103,7 +103,7 @@ export const teams: Team[] = [
     won: 1,
     lost: 1,
     nrr: -0.308,
-    points: 0,
+    points: 2,
     rank: 6
   },
   {
