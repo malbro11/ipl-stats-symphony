@@ -484,12 +484,85 @@ export const matches: Match[] = [
     "date": "2025-03-30T15:30:00+05:30",
     "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
     "result": "Upcoming match",
-    "status": "Live",
-    finalStats: 'Innings Break',
-    team1Score: '',
+    "status": "Completed",
+    finalStats: 'Delhi Capitals won by 7 wkts',
+    team1Score: '166/3 (16)',
     team2Score: '163 (18.4)',
     player_match: ''
-  }
+  },
+  {
+    "id": "match11",
+    "team1Id": "rr",
+    "team2Id": "csk",
+    "date": "2025-03-30T19:30:00+05:30",
+    "venue": "Barsapara Cricket Stadium, Guwahati",
+    "result": "Upcoming",
+    "status": "Live",
+    finalStats: 'Chennai Super Kings opt to bowl'
+  },
+  {
+    "id": "match12",
+    "team1Id": "mi",
+    "team2Id": "kkr",
+    "date": "2025-03-31T19:30:00+05:30",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Upcoming",
+    "status": "Upcoming"
+  },
+  {
+    "id": "match13",
+    "team1Id": "lsg",
+    "team2Id": "pbks",
+    "date": "2025-04-01T19:30:00+05:30",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "Upcoming",
+    "status": "Upcoming"
+  },
+  {
+    "id": "match14",
+    "team1Id": "rcb",
+    "team2Id": "gt",
+    "date": "2025-04-02T19:30:00+05:30",
+    "venue": "M.Chinnaswamy Stadium, Bengaluru",
+    "result": "Upcoming",
+    "status": "Upcoming"
+  },
+  {
+    "id": "match15",
+    "team1Id": "kkr",
+    "team2Id": "srh",
+    "date": "2025-04-03T19:30:00+05:30",
+    "venue": "Eden Gardens, Kolkata",
+    "result": "Upcoming",
+    "status": "Upcoming"
+  },
+  {
+    "id": "match16",
+    "team1Id": "lsg",
+    "team2Id": "mi",
+    "date": "2025-04-04T19:30:00+05:30",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "Upcoming",
+    "status": "Upcoming"
+  },
+  {
+    "id": "match17",
+    "team1Id": "csk",
+    "team2Id": "dc",
+    "date": "2025-04-05T15:30:00+05:30",
+    "venue": "MA Chidambaram Stadium, Chennai",
+    "result": "Upcoming",
+    "status": "Upcoming"
+  },
+  {
+    "id": "match18",
+    "team1Id": "pbks",
+    "team2Id": "rr",
+    "date": "2025-04-05T19:30:00+05:30",
+    "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Chandigarh",
+    "result": "Upcoming",
+    "status": "Upcoming"
+  },
 ];
 
 // Top Performers
