@@ -65,7 +65,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: +0.625,
     points: 0,
-    rank: 3
+    rank: 4
   },
   {
     id: "lsg",
@@ -78,7 +78,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: +0.963,
     points: 2,
-    rank: 2
+    rank: 3
   },
   {
     id: "dc",
@@ -86,12 +86,12 @@ export const teams: Team[] = [
     shortName: "DC",
     logo: "/teams/dc.png",
     primaryColor: "#0078BC",
-    matches: 1,
-    won: 1,
+    matches: 2,
+    won: 2,
     lost: 0,
-    nrr: +0.371,
+    nrr: +1.320,
     points: 0,
-    rank: 5
+    rank: 2
   },
   {
     id: "kkr",
@@ -104,7 +104,7 @@ export const teams: Team[] = [
     lost: 1,
     nrr: -0.308,
     points: 0,
-    rank: 7
+    rank: 6
   },
   {
     id: "rr",
@@ -130,7 +130,7 @@ export const teams: Team[] = [
     lost: 0,
     nrr: 0.55,
     points: 2,
-    rank: 4
+    rank: 5
   },
   {
     id: "srh",
@@ -138,12 +138,12 @@ export const teams: Team[] = [
     shortName: "SRH",
     logo: "/teams/srh.png",
     primaryColor: "#F7A721",
-    matches: 2,
+    matches: 3,
     won: 1,
-    lost: 1,
-    nrr: 	-0.128,
+    lost: 2,
+    nrr: 	-0.871,
     points: 2,
-    rank: 6
+    rank: 7
   }
 ];
 
