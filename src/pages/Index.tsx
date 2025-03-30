@@ -50,7 +50,7 @@ const Index = () => {
 
       <div id="content">
         <div className="container mx-auto px-4 py-4">
-          <h1>Chennai Super Kings vs Royal Challengers Bengaluru</h1>
+          <h1>Rajasthan Royals vs Chennai Super Kings, 11th Match</h1>
         </div>
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
@@ -80,36 +80,41 @@ const Index = () => {
           )}
         </div>
 
-        <div className="container mx-auto px-6 py-8  rounded-lg shadow-lg">
-          <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">Chennai Super Kings vs Royal Challengers Bengaluru</h1>
+        <div className="container mx-auto px-6 py-8 rounded-lg shadow-lg mt-10">
+  <h1 className="text-3xl font-bold text-center text-purple-600 mb-6">
+    Rajasthan Royals vs Chennai Super Kings, 11th Match - Live Cricket Score, Commentary
+  </h1>
 
-          <p className="text-lg  leading-relaxed text-center">The much-awaited clash between <strong>Chennai Super Kings (CSK)</strong> and <strong>Royal Challengers Bengaluru (RCB)</strong> in the IPL 2025 season is set to be a thrilling contest. Cricket fans across the world eagerly anticipate this high-stakes match.</p>
+  <p className="text-lg leading-relaxed text-center">
+    The high-voltage encounter between <strong>Rajasthan Royals (RR)</strong> and
+    <strong>Chennai Super Kings (CSK)</strong> is set to be a thrilling match in the IPL 2025 season. Fans are excited to witness another epic showdown between these two teams.
+  </p>
 
-          <div className="mt-6 p-6  rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold  mb-4">CSK vs RCB Match 2025: Live Updates & Prediction</h2>
-            <p className="">Fans are eagerly searching for the <strong>CSK vs RCB live score</strong> and updates on who will win the match. With star players in both teams, this encounter promises intense action.</p>
-          </div>
+  <div className="mt-6 p-6 rounded-lg shadow-md">
+    <h2 className="text-2xl font-semibold mb-4">RR vs CSK Live Score & Updates</h2>
+    <p>Stay updated with the latest <strong>RR vs CSK live score</strong> and match updates. With top-class players in both squads, expect an electrifying contest.</p>
+  </div>
 
-          <div className="mt-6 p-6  rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold  mb-4">CSK vs RCB Head-to-Head & Stats Comparison</h2>
-            <p className="">Looking at the <strong>CSK vs RCB head-to-head</strong> record, Chennai Super Kings have had an upper hand historically. However, Royal Challengers Bengaluru have made strong additions to their squad this season.</p>
-          </div>
+  <div className="mt-6 p-6 rounded-lg shadow-md">
+    <h2 className="text-2xl font-semibold mb-4">RR vs CSK Head-to-Head & Stats</h2>
+    <p>Looking at the <strong>RR vs CSK head-to-head</strong> record, Chennai Super Kings have had a solid past record, but Rajasthan Royals are determined to challenge their dominance.</p>
+  </div>
 
-          <div className="mt-6 p-6  rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold mb-4">CSK vs RCB 2025 Match Prediction</h2>
-            <p className="">Many cricket analysts and Dream11 experts are making their <strong>CSK vs RCB 2025 match prediction</strong>. The battle between CSK’s experienced squad and RCB’s power hitters will be key.</p>
-          </div>
+  <div className="mt-6 p-6 rounded-lg shadow-md">
+    <h2 className="text-2xl font-semibold mb-4">RR vs CSK 2025 Match Prediction</h2>
+    <p>Cricket pundits and analysts are making their <strong>RR vs CSK 2025 match prediction</strong>. The battle between RR’s aggressive batting and CSK’s strategic bowling attack will be a key factor.</p>
+  </div>
 
-          <div className="mt-6 p-6  rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold  mb-4">Who Will Win CSK vs RCB Match?</h2>
-            <p className="">The question on everyone’s mind: <strong>Who will win CSK vs RCB match?</strong> Stay tuned for expert analysis and match highlights.</p>
-          </div>
+  <div className="mt-6 p-6 rounded-lg shadow-md">
+    <h2 className="text-2xl font-semibold mb-4">Who Will Win RR vs CSK Match?</h2>
+    <p>The biggest question: <strong>Who will win RR vs CSK match?</strong> Stay tuned for in-depth analysis and match reviews.</p>
+  </div>
 
-          <div className="mt-6 p-6  rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold  mb-4">CSK vs RCB IPL Highlights Today</h2>
-            <p className="">Missed the match? Catch all the <strong>CSK vs RCB IPL highlights today</strong> and relive the best moments.</p>
-          </div>
-        </div>
+  <div className="mt-6 p-6 rounded-lg shadow-md">
+    <h2 className="text-2xl font-semibold mb-4">RR vs CSK IPL Highlights Today</h2>
+    <p>Missed the action? Watch all the <strong>RR vs CSK IPL highlights today</strong> and relive the best moments of the match.</p>
+  </div>
+</div>
 
         {!isPointsTableRoute && (
           <>
