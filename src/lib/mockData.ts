@@ -510,7 +510,11 @@ export const matches: Match[] = [
     "date": "2025-03-31T19:30:00+05:30",
     "venue": "Wankhede Stadium, Mumbai",
     "result": "Upcoming",
-    "status": "Upcoming"
+    "status": "Live",
+    finalStats: 'Mumbai Indians need 47 runs in 74 balls',
+    team1Score: '70/1 (7.4)',
+    team2Score: "116 (16.2)",
+    player_match: ''
   },
   {
     "id": "match13",
