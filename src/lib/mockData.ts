@@ -510,7 +510,7 @@ export const matches: Match[] = [
     "date": "2025-03-31T19:30:00+05:30",
     "venue": "Wankhede Stadium, Mumbai",
     "result": "Upcoming",
-    "status": "Live",
+    "status": "Completed",
     finalStats: 'Mumbai Indians won by 8 wkts',
     team1Score: '121/2 (12.5)',
     team2Score: "116 (16.2)",
