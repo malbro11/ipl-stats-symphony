@@ -511,10 +511,10 @@ export const matches: Match[] = [
     "venue": "Wankhede Stadium, Mumbai",
     "result": "Upcoming",
     "status": "Live",
-    finalStats: 'Mumbai Indians need 47 runs in 74 balls',
-    team1Score: '70/1 (7.4)',
+    finalStats: 'Mumbai Indians won by 8 wkts',
+    team1Score: '121/2 (12.5)',
     team2Score: "116 (16.2)",
-    player_match: ''
+    player_match: 'Ashwani Kumar'
   },
   {
     "id": "match13",
