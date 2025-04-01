@@ -50,7 +50,7 @@ const Index = () => {
 
       <div id="content">
         <div className="container mx-auto px-4 py-4">
-          <h1>Rajasthan Royals vs Chennai Super Kings, 11th Match</h1>
+          <h1>Royal Challengers Bengaluru vs Gujarat Titans, 14th Match</h1>
         </div>
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
@@ -81,40 +81,45 @@ const Index = () => {
         </div>
 
         <div className="container mx-auto px-6 py-8 rounded-lg shadow-lg mt-10">
-  <h1 className="text-3xl font-bold text-center text-purple-600 mb-6">
-    Rajasthan Royals vs Chennai Super Kings, 11th Match - Live Cricket Score, Commentary
-  </h1>
+          <h1 className="text-3xl font-bold text-center text-purple-600 mb-6">
+            Royal Challengers Bengaluru vs Gujarat Titans, 14th Match - Live Cricket Score, Commentary
+          </h1>
 
-  <p className="text-lg leading-relaxed text-center">
-    The high-voltage encounter between <strong>Rajasthan Royals (RR)</strong> and
-    <strong>Chennai Super Kings (CSK)</strong> is set to be a thrilling match in the IPL 2025 season. Fans are excited to witness another epic showdown between these two teams.
-  </p>
+          <p className="text-lg leading-relaxed text-center">
+            The exciting clash between <strong>Royal Challengers Bengaluru (RCB)</strong> and
+            <strong> Gujarat Titans (GT)</strong> is set to be an electrifying contest in the IPL 2025 season.
+            Fans eagerly await to see how both teams will fare in this crucial matchup.
+          </p>
 
-  <div className="mt-6 p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-semibold mb-4">RR vs CSK Live Score & Updates</h2>
-    <p>Stay updated with the latest <strong>RR vs CSK live score</strong> and match updates. With top-class players in both squads, expect an electrifying contest.</p>
-  </div>
+          <div className="mt-6 p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold mb-4">RCB vs GT Live Score & Updates</h2>
+            <p>Stay tuned with the latest <strong>RCB vs GT live score</strong> and match updates. With
+              key players on both sides, expect an action-packed game.</p>
+          </div>
 
-  <div className="mt-6 p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-semibold mb-4">RR vs CSK Head-to-Head & Stats</h2>
-    <p>Looking at the <strong>RR vs CSK head-to-head</strong> record, Chennai Super Kings have had a solid past record, but Rajasthan Royals are determined to challenge their dominance.</p>
-  </div>
+          <div className="mt-6 p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold mb-4">RCB vs GT Head-to-Head & Stats</h2>
+            <p>Looking at the <strong>RCB vs GT head-to-head</strong> record, both teams have had
+              competitive outings. Will RCB capitalize on their home advantage, or will GT bounce back
+              with a strong performance?</p>
+          </div>
 
-  <div className="mt-6 p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-semibold mb-4">RR vs CSK 2025 Match Prediction</h2>
-    <p>Cricket pundits and analysts are making their <strong>RR vs CSK 2025 match prediction</strong>. The battle between RR’s aggressive batting and CSK’s strategic bowling attack will be a key factor.</p>
-  </div>
+          <div className="mt-6 p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold mb-4">RCB vs GT 2025 Match Prediction</h2>
+            <p>Experts predict a high-scoring game with <strong>Virat Kohli</strong> and
+              <strong> Shubman Gill</strong> playing key roles. Will RCB’s aggressive batting outshine GT’s bowling attack?</p>
+          </div>
 
-  <div className="mt-6 p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-semibold mb-4">Who Will Win RR vs CSK Match?</h2>
-    <p>The biggest question: <strong>Who will win RR vs CSK match?</strong> Stay tuned for in-depth analysis and match reviews.</p>
-  </div>
+          <div className="mt-6 p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold mb-4">Who Will Win RCB vs GT Match?</h2>
+            <p>The ultimate question: <strong>Who will win RCB vs GT match?</strong> With match-winners like Rashid Khan and Rajat Patidar, both teams have the potential to turn the game in their favor.</p>
+          </div>
 
-  <div className="mt-6 p-6 rounded-lg shadow-md">
-    <h2 className="text-2xl font-semibold mb-4">RR vs CSK IPL Highlights Today</h2>
-    <p>Missed the action? Watch all the <strong>RR vs CSK IPL highlights today</strong> and relive the best moments of the match.</p>
-  </div>
-</div>
+          <div className="mt-6 p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold mb-4">RCB vs GT IPL Highlights Today</h2>
+            <p>Missed the match? Catch all the <strong>RCB vs GT IPL highlights today</strong> and relive the thrilling moments from this epic encounter.</p>
+          </div>
+        </div>
 
         {!isPointsTableRoute && (
           <>
