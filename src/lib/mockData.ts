@@ -16,19 +16,6 @@ export interface Team {
 
 export const teams: Team[] = [
   {
-    "id": "rcb",
-    "name": "Royal Challengers Bangalore",
-    "shortName": "RCB",
-    "logo": "/teams/rcb.png",
-    "primaryColor": "#D71920",
-    "matches": 2,
-    "won": 2,
-    "lost": 0,
-    "nrr": +2.266,
-    "points": 4,
-    "rank": 1
-  },
-  {
     "id": "pbks",
     "name": "Punjab Kings",
     "shortName": "PBKS",
@@ -39,7 +26,7 @@ export const teams: Team[] = [
     "lost": 0,
     "nrr": +1.485,
     "points": 4,
-    "rank": 2
+    "rank": 1
   },
   {
     "id": "dc",
@@ -52,6 +39,19 @@ export const teams: Team[] = [
     "lost": 0,
     "nrr": +1.320,
     "points": 4,
+    "rank": 2
+  },
+  {
+    "id": "rcb",
+    "name": "Royal Challengers Bengaluru",
+    "shortName": "RCB",
+    "logo": "/teams/rcb.png",
+    "primaryColor": "#D71920",
+    "matches": 3,
+    "won": 2,
+    "lost": 1,
+    "nrr": +1.149,
+    "points": 4,
     "rank": 3
   },
   {
@@ -60,11 +60,11 @@ export const teams: Team[] = [
     "shortName": "GT",
     "logo": "/teams/gt.png",
     "primaryColor": "#1A1F2C",
-    "matches": 2,
-    "won": 1,
+    "matches": 3,
+    "won": 2,
     "lost": 1,
-    "nrr": +0.625,
-    "points": 2,
+    "nrr": +0.807,
+    "points": 4,
     "rank": 4
   },
   {
@@ -536,7 +536,11 @@ export const matches: Match[] = [
     "date": "2025-04-02T19:30:00+05:30",
     "venue": "M.Chinnaswamy Stadium, Bengaluru",
     "result": "Upcoming",
-    "status": "Upcoming"
+    "status": "Completed",
+    finalStats: 'Gujarat Titans won by 8 wkts',
+    team1Score: '169/8 (20)',
+    team2Score: "170/2 (17.5)",
+    player_match: 'Mohammed Siraj'
   },
   {
     "id": "match15",
